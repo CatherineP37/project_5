@@ -37,34 +37,68 @@
 
         <!-- Logo -->
 
-        <a href="index.html" class="logo">CHOCOLATE TREATS</a>
+        <a href="{% url 'index' %}" class="logo">CHOCOLATE TREATS</a>
 		
 		 <!-- links -->
 		<ul class="icons">
 			<li><a href="bag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>		
-			<li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>			    		
+			<li>
+                <button onclick="profile_menu()" class="menu_button" aria-label="profile_menu">
+                    <i class="fa-solid fa-user"></i>
+                </button>			    		
 		    <li>
 				<button onclick="menu()" class="menu_button" aria-label="Menu">
 					<i class="fa fa-bars"></i>
 				</button>
 			</li>
-			</ul>
+		</ul>
+
+                        <ul id="account_menu">
+                            {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                <li>
+                                    <a href="" class="dropdown-item">Product Management</a>
+                                </li>
+                                {% endif %}
+                                <li>
+                                <a href="" class="dropdown-item">My Profile</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            </li>
+                            {% else %}
+                            <li>
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            </li>
+                        </ul>
+                            {% endif %}
+                   
+                                    {% if grand_total %}
+                                        ${{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                        $0.00
+                                    {% endif %}
+                        
+                                
 
         <!-- Menu  -->
 
         <nav>
             <ul id="list">              
-                <li>
-                    <a href="full_collection.html">Full Collection</a>
+                <li>                    
+                    <a href="{% 'full_collection' %}">Full Collection</a>
                 </li>
                 <li>
-                    <a href="chocolate_boxes.html">Chocolate Boxes</a>
+                    <a href="{% 'chocolate_boxes' %}">Chocolate Boxes</a>
                 </li>
                 <li>
-                    <a href="chocolate_bars.html">Chocolate Bars</a>
+                    <a href="{% 'chocolate_bars' %}">Chocolate Bars</a>
                 </li>
 				<li>
-                    <a href="offers.html">Special Offers</a>
+                    <a href="{% 'offers' %}">Special Offers</a>
                 </li>
             </ul>
         </nav>
@@ -87,16 +121,16 @@
         <nav class="horizontal_menu">
             <ul>              
                 <li>
-                    <a href="full_collection.html">Full Collection</a>
+                    <a href="{% 'full_collection.html' %}">Full Collection</a>
                 </li>
                 <li>
-                    <a href="chocolate_boxes.html">Chocolate Boxes</a>
+                    <a href="{% 'chocolate_boxes.html' %}">Chocolate Boxes</a>
                 </li>
                 <li>
-                    <a href="chocolate_bars.html">Chocolate Bars</a>
+                    <a href="{% 'chocolate_bars.html' %}">Chocolate Bars</a>
                 </li>
 				<li>
-                    <a href="offers.html">Special Offers</a>
+                    <a href="{% 'offers' %}">Special Offers</a>
                 </li>
             </ul>
         </nav>

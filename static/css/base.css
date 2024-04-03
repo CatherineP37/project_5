@@ -162,6 +162,10 @@ header nav ul li a {
 	display: block;
 }
 
+.show_menu {
+    display: block;
+}
+
 .horizontal_menu {
 	display: none;    
    }
@@ -345,8 +349,6 @@ footer p {
     margin: 0 0 0 3%;
 }
 
-
-
 .social i {
 	color: #ffffff;
 	
@@ -417,7 +419,6 @@ footer p {
 }
 	
 	
-
 
 /* Media query: narrow desktop */
 

@@ -1,18 +1,11 @@
-/* Google fonts import */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lemon&display=swap')
-
-
 /* General */
-
 
 * {
     margin: 0;
     padding: 0;
     border: none;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
-
 
 body {
     font-family: 'Inter', sans-serif;        
@@ -29,11 +22,9 @@ h1, h2, h3 {
 	color: #3e2908;
 }
 
-
 h1 {
 	font-size: 2em;
 	margin: 20px 0 70px 0;
-
 }
 
 .wrapper {
@@ -60,8 +51,7 @@ header {
 
 .icons {	
 	padding: 0;
-	width: 17%;
-    
+	width: 17%;    
 }
 
 .icons i {
@@ -73,7 +63,6 @@ header {
 	list-style-type: none;
 	display: inline-block;
 	margin: 0 5% 0 0;
-
 }
 
 .menu_button {
@@ -84,20 +73,17 @@ header {
     margin: 0;
     padding: 0;	
 	color: #ffffff;
-	}
+}
 
 .search {	
 	width: 80%;
 	display: block;
-	margin: 0 auto;
-  	
+	margin: 0 auto;  	
 }
-
 
 #search {
 	width: 80%;
 }
-
 
 /* Logo */
 
@@ -141,8 +127,7 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-	background-color: #55390c;
-	
+	background-color: #55390c;	
 }
 
 header nav ul li a {
@@ -234,8 +219,6 @@ header nav ul li a {
 	width: 90%;
 	margin: 20px auto 0 auto;	
 }
-
-
 
 .images h2, h3 {
 	color: #3e2908;
@@ -364,15 +347,12 @@ footer p {
 	margin: 0 3% 0 0 
 }
 
-
 .links {
-	background-color: #3e2908;
-	
+	background-color: #3e2908;	
 }
 
 .links ul li {
-	list-style-type: none;
-	
+	list-style-type: none;	
 }
 
 .links ul li a {
@@ -394,8 +374,7 @@ footer p {
 	
 .main-picture {    
     height: 100vh;
-    width: 100%;
-   
+    width: 100%;   
 }
 
 .collection {
@@ -432,7 +411,7 @@ footer p {
 	.introduction {
 	display: grid;
     grid-template-columns: 1fr 1fr;
-}
+    }
 
 .left {
 	padding: 200px 0 0 0;
@@ -492,23 +471,17 @@ footer p {
 }
 
 
-.search {
-	
-	width: 50%;
-	
+.search {	
+	width: 50%;	
 }
 
-.icons {	
-	
-	width: 7%;
-    
+.icons {		
+	width: 7%;    
 }
 
 
-.icons li {
-	
+.icons li {	
 	margin: 0 7% 0 0;
-
 }
 
 .collection {
@@ -532,21 +505,16 @@ footer p {
 
 @media screen and (min-width: 1320px) {
 	.search {	
-	width: 30%;
-	
+	width: 30%;	
 }
 
 
-.icons {	
-	
-	width: 5%;
-    
+.icons {		
+	width: 5%;    
 }
 
-.icons li {
-	
+.icons li {	
 	margin: 0 10% 0 0;
-
 }
 
 .info {

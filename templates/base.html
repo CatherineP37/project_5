@@ -12,9 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chocolate Treats is an online store selling handmade chocolates.">
     <meta name="keywords" content="chocolate, handmade chocolate, chocolate boxes, chocolate bars">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Chocolate Treats</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
 	
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,13 +135,13 @@
         <nav class="horizontal_menu">
             <ul>              
                 <li>
-                    <a href="{% 'full_collection.html' %}">Full Collection</a>
+                    <a href="{% 'full_collection' %}">Full Collection</a>
                 </li>
                 <li>
-                    <a href="{% 'chocolate_boxes.html' %}">Chocolate Boxes</a>
+                    <a href="{% 'chocolate_boxes' %}">Chocolate Boxes</a>
                 </li>
                 <li>
-                    <a href="{% 'chocolate_bars.html' %}">Chocolate Bars</a>
+                    <a href="{% 'chocolate_bars' %}">Chocolate Bars</a>
                 </li>
 				<li>
                     <a href="{% 'offers' %}">Special Offers</a>
@@ -179,10 +179,10 @@
 	
 	<div class="links">
 		<ul>
-			<li><a href="full_collection.html">OUR CHOCOLATES</a></li>
-			<li><a href="sitemap.html">SITEMAP</a></li>
-			<li><a href="privacy.html">PRIVACY POLICY</a></li>
-			<li><a href="contact.html">CONTACT US</a></li>
+			<li><a href="{% 'full_collection' %}">OUR CHOCOLATES</a></li>
+			<li><a href="{% 'sitemap' %}">SITEMAP</a></li>
+			<li><a href="{% 'privacy' %}">PRIVACY POLICY</a></li>
+			<li><a href="{% 'contact' %}">CONTACT US</a></li>
 		</ul>
 	</div>
     </section>
@@ -192,7 +192,7 @@
 	</div>
     </footer>
     </div>
-<script src="assets/js/script.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
 
 </body>
 

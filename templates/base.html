@@ -41,7 +41,7 @@
 		
 		 <!-- links -->
 		<ul class="icons">
-			<li><a href="bag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+			<li><a href="{% url 'bag' %}"><i class="fa-solid fa-bag-shopping"></i></a></li>
             
             <li>
                 <a href="">
@@ -103,16 +103,16 @@
         <nav>
             <ul id="list">              
                 <li>                    
-                    <a href="{% 'full_collection' %}">Full Collection</a>
+                    <a href="{% url 'full_collection' %}">Full Collection</a>
                 </li>
                 <li>
-                    <a href="{% 'chocolate_boxes' %}">Chocolate Boxes</a>
+                    <a href="{% url 'chocolate_boxes' %}">Chocolate Boxes</a>
                 </li>
                 <li>
-                    <a href="{% 'chocolate_bars' %}">Chocolate Bars</a>
+                    <a href="{% url 'chocolate_bars' %}">Chocolate Bars</a>
                 </li>
 				<li>
-                    <a href="{% 'offers' %}">Special Offers</a>
+                    <a href="{% url 'offers' %}">Special Offers</a>
                 </li>
             </ul>
         </nav>
@@ -135,16 +135,16 @@
         <nav class="horizontal_menu">
             <ul>              
                 <li>
-                    <a href="{% 'full_collection' %}">Full Collection</a>
+                    <a href="{% url 'full_collection' %}">Full Collection</a>
                 </li>
                 <li>
-                    <a href="{% 'chocolate_boxes' %}">Chocolate Boxes</a>
+                    <a href="{% url 'chocolate_boxes' %}">Chocolate Boxes</a>
                 </li>
                 <li>
-                    <a href="{% 'chocolate_bars' %}">Chocolate Bars</a>
+                    <a href="{% url 'chocolate_bars' %}">Chocolate Bars</a>
                 </li>
 				<li>
-                    <a href="{% 'offers' %}">Special Offers</a>
+                    <a href="{% url 'offers' %}">Special Offers</a>
                 </li>
             </ul>
         </nav>
@@ -179,10 +179,10 @@
 	
 	<div class="links">
 		<ul>
-			<li><a href="{% 'full_collection' %}">OUR CHOCOLATES</a></li>
-			<li><a href="{% 'sitemap' %}">SITEMAP</a></li>
-			<li><a href="{% 'privacy' %}">PRIVACY POLICY</a></li>
-			<li><a href="{% 'contact' %}">CONTACT US</a></li>
+			<li><a href="{% url 'full_collection' %}">OUR CHOCOLATES</a></li>
+			<li><a href="{% url 'sitemap' %}">SITEMAP</a></li>
+			<li><a href="{% url 'privacy' %}">PRIVACY POLICY</a></li>
+			<li><a href="{% url 'contact' %}">CONTACT US</a></li>
 		</ul>
 	</div>
     </section>

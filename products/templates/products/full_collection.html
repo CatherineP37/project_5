@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<h2>Full Collection</h2>
+        <section class="collection">
+            <div class="images">
+			<a href="{% url 'raspberry_bar' %}">
+				<img src="{{'images/raspberry_bar.webp'}}" alt="Chocolate raspberry bar">
+			    <h2>Chocolate Raspberry Bar</h2>
+				<h3>35g</h3>
+				<h3>£1</h3>
+			</a> 
+			</div>
+            <div class="images">
+			<a href="{% url 'strawberry_bar' %}">
+				<img src="{{'images/strawberry_bar.webp'}}" alt="Chocolate strawberry bar">
+			    <h2>Chocolate Strawberry Bar</h2>
+				<h3>35g</h3>
+				<h3>£1</h3>
+			</a>
+            </div>
+            <div class="images">
+            <a href="{% url 'fudge_bar' %}">
+				<img src="{{'images/fudge_bar.webp'}}" alt="Chocolate fudge bar">
+			    <h2>Chocolate Fudge Bar</h2>
+				<h3>35g</h3>
+				<h3>£1</h3>
+			</a> 
+            </div>
+            <div class="images">               
+			<a href="{% url 'coconut_bar' %}">
+				<img src="{{'images/coconut_bar.webp'}}" alt="Chocolate coconut bar">
+			    <h2>Chocolate Coconut Bar</h2>
+				<h3>35g</h3>
+				<h3>£1</h3>
+			</a>
+            </div>
+            <div class="images">
+            <a href="{% url 'chocolate_bar' %}">
+				<img src="{{'images/chocolate_bar.webp'}}" alt="Chocolate bar, no added sugar">
+			    <h2>Sugar Free Chocolate Bar</h2>
+				<h3>35g</h3>
+				<h3>£1.20</h3>
+			</a> 
+            </div>
+            <div class="images">               
+			<a href="{% url 'lemon_bar' %}">
+				<img src="{{'images/lemon_bar.webp'}}" alt="Chocolate lemon bar">
+			    <h2>Chocolate Lemon Bar</h2>
+				<h3>35g</h3>
+				<h3>£1</h3>
+			</a>
+            </div>
+            <div class="images">
+            <a href="{% url 'raspberry' %}">
+				<img src="{{'images/raspberry.webp'}}" alt="Chocolate raspberry box">
+			    <h2>Chocolate Raspberry Box</h2>
+				<h3>35g</h3>
+				<h3>£3</h3>
+			</a> 
+            </div>
+            <div class="images">              
+			<a href="{% url 'strawberry' %}">
+				<img src="{{'images/strawberry.webp'}}" alt="Chocolate strawberry box">
+			    <h2>Chocolate Strawberry Box</h2>
+				<h3>35g</h3>
+				<h3>£3</h3>
+			</a>
+            </div>
+            <div class="images">
+            <a href="{% url 'fudge' %}">
+				<img src="{{'images/fudge.webp'}}" alt="Chocolate fudge box">
+			    <h2>Chocolate Fudge Box</h2>
+				<h3>200g</h3>
+				<h3>£3</h3>
+			</a> 
+            </div>
+            <div class="images">               
+			<a href="{% url 'lemon' %}">
+				<img src="{{'images/lemon.webp'}}" alt="Chocolate lemon box">
+			    <h2>Chocolate Lemon Box</h2>
+				<h3>200g</h3>
+				<h3>£3</h3>
+			</a>
+            </div>
+            <div class="images">
+            <a href="{% url 'coconut' %}">
+				<img src="{{'images/coconut.webp'}}" alt="Chocolate coconut balls">
+			    <h2>Chocolate Coconut Balls</h2>
+				<h3>200g</h3>
+				<h3>£3.20</h3>
+			</a> 
+            </div>
+            <div class="images">               
+			<a href="{% url 'hazelnut' %}">
+				<img src="{{'images/hazelnut.webp'}}" alt="Chocolate hazelnut balls">
+			    <h2>Chocolate Hazelnut Balls</h2>
+				<h3>200g</h3>
+				<h3>£3.20</h3>
+			</a>
+            </div>
+         </section>
+
+
+	
+	
+
+
+
+{% endblock %}

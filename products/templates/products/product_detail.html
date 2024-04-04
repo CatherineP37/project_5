@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<section class="product">
+    <div class="product_image">
+        <img src="{{ product.image }}" alt="Chocolate raspberry bar">
+        <div class="information">
+            <h2>{{ product.name }}</h2>
+            <h3>{{ product.weight }}</h3>
+            <h3>{{ product.price }}</h3>
+        </div>
+    </div>
+    <div class="description">
+        <h3>{{ product.description }}</h3>
+        <h3>Ingredients</h3>
+        <p>{{ product.ingredients }}</p>
+        <h3>Nutritional Information</h3>
+        <p>{{ product.nutrition }}</p>        
+    </div>
+</section>
+
+	
+	
+
+
+
+{% endblock %}

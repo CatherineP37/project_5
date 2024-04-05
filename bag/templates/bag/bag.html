@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<div></div>
+    <div>
+        <div>
+            <div>
+                <hr>
+                <h2>Shopping Bag</h2>
+                <hr>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                {% if bag_items %}
+                <table></table>
+                {% else %}
+                    <p>Your bag is empty.</p>
+                    <a href="{% url 'products' %}">
+                        <span>
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span>Keep Shopping</span>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+        
+       
+
+
+	
+	
+
+
+
+{% endblock %}

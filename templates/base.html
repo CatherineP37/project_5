@@ -127,13 +127,23 @@
     
        <h3 class="logo-font my-1">Free delivery on orders over £{{ free_shipping_threshold }}!</h3>                
    
-       <div class="menu_and_search">
-	    <!-- Search -->
-		<div class="search">
-			
-			<input type="search" id="search" name="search" placeholder="Enter a search term">
-			<input type="submit" value="search">
-		</div>
+       <div class="menu_and_search"> 
+
+         <!-- Search -->
+
+        <div class="search">
+            <form method="GET" action="{% url 'products' %}">                
+                <input type="text" id="search" name="q" placeholder="Enter a search term">
+                    <button type="submit">
+                        <span>
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </button>                   
+            </form>
+        </div>
+
+	   
+		
         <nav class="horizontal_menu">
             <ul>              
                 <li>

@@ -66,59 +66,59 @@
                 <button onclick="profile_menu()" class="menu_button" aria-label="profile_menu">
                     <i class="fa-solid fa-user"></i>
                 </button>	
-                <ul id="account_menu">
-                    {% if request.user.is_authenticated %}
-                        {% if request.user.is_superuser %}
-                        <li>
-                            <a href="" class="dropdown-item">Product Management</a>
-                        </li>
-                        {% endif %}
-                        <li>
-                        <a href="" class="dropdown-item">My Profile</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                    </li>
-                    {% else %}
-                    <li>
-                        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                    </li>
-                </ul>
-                    {% endif %}
-                               
+            </li>                               
 		    <li>
 				<button onclick="menu()" class="menu_button" aria-label="Menu">
-					<i class="fa fa-bars"></i>
-				</button>
+                    <i class="fa fa-bars"></i>
+                  </button>
 			</li>
-		</ul>
+		</ul>        
+    
+          <!-- Menu -->
+    
+          <nav>
+            <ul id="list">
+              <li>
+                <a href="{% url 'index' %}">Home</a>
+             </li>  
+              <li>                    
+                <a href="{% url 'products' %}">Our products</a>
+             </li>
+             <li>
+                <a href="{% url 'about' %}">About us</a>
+            </li>
+            <li>
+                <a href="{% url 'contact' %}">Contact us</a>
+            </li>
+            <li>
+                <a href="{% url 'privacy' %}">Privacy policy</a>
+            </li>
+            {% if request.user.is_authenticated %}  
+            <li class="nav-item">
+              <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+            </li>  
+            {% else %} 
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                href="{% url 'account_signup' %}">Sign up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+            </li>                                   
+            {% endif %}
+        </ul>
+      </nav>
 
+              
+             
+           
                         
                                     
                         
                                 
 
-        <!-- Menu  -->
+    
 
-        <nav>
-            <ul id="list">              
-                <li>                    
-                    <a href="{% url 'full_collection' %}">Full Collection</a>
-                </li>
-                <li>
-                    <a href="{% url 'chocolate_boxes' %}">Chocolate Boxes</a>
-                </li>
-                <li>
-                    <a href="{% url 'chocolate_bars' %}">Chocolate Bars</a>
-                </li>
-				<li>
-                    <a href="{% url 'offers' %}">Special Offers</a>
-                </li>
-            </ul>
-        </nav>
 		
 		
 			
@@ -132,38 +132,7 @@
    
        <div class="menu_and_search"> 
 
-         <!-- Search -->
-
-        <div class="search">
-            <form method="GET" action="{% url 'products' %}">                
-                <input type="text" id="search" name="q" placeholder="Enter a search term">
-                    <button type="submit">
-                        <span>
-                            <i class="fas fa-search"></i>
-                        </span>
-                    </button>                   
-            </form>
-        </div>
-
-	   
-		
-        <nav class="horizontal_menu">
-            <ul>              
-                <li>
-                    <a href="{% url 'full_collection' %}">Full Collection</a>
-                </li>
-                <li>
-                    <a href="{% url 'chocolate_boxes' %}">Chocolate Boxes</a>
-                </li>
-                <li>
-                    <a href="{% url 'chocolate_bars' %}">Chocolate Bars</a>
-                </li>
-				<li>
-                    <a href="{% url 'offers' %}">Special Offers</a>
-                </li>
-            </ul>
-        </nav>
-		</div>
+       
 		 <main>
 		
             {% block content %} {% endblock content %}
@@ -194,10 +163,11 @@
 	
 	<div class="links">
 		<ul>
-			<li><a href="{% url 'full_collection' %}">OUR CHOCOLATES</a></li>
+			<li><a href="{% url 'products' %}">OUR CHOCOLATES</a></li>
 			<li><a href="{% url 'sitemap' %}">SITEMAP</a></li>
 			<li><a href="{% url 'privacy' %}">PRIVACY POLICY</a></li>
 			<li><a href="{% url 'contact' %}">CONTACT US</a></li>
+            <li><a href="{% url 'about' %}">ABOUT US</a></li>
 		</ul>
 	</div>
     </section>

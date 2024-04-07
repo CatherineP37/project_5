@@ -26,3 +26,8 @@ def account(request):
     """ A view to return the account page """
 
     return render(request, 'home/account.html')
+
+def sitemap(request):
+    """ A view to return the sitemap page """
+
+    return render(request, 'home/sitemap.html')

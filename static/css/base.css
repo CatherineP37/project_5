@@ -81,27 +81,6 @@ header {
 	color: #ffffff;
 }
 
-header nav a {
-    text-decoration: none;
-}
-
-header nav li {
-    list-style-type: none;
-    margin-right: 10px;
-    color: #503503;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-nav li a {
-    color: #503503;
-}
-
-nav li a:hover {
-    font-weight: bold;
-}
-
-
 
 /* Logo */
 
@@ -114,51 +93,35 @@ nav li a:hover {
 	margin: 0 0 0 3%;
 }
 
-/* Main navigation */
+/* Navigation menu */
 
-header nav {
-   position: absolute;
-   background-color: #3e2908;
-   width: 100%; 
-   right: 0; 
-   top: 100%; 
-   font-size: 110%; 
-   padding: 0; 
-   margin: 0; 
-   width: 100%; 
+.navigation {
+    position: absolute;
+    background-color: #3e2908;
+    width: 100%;
+    left: 0;
+    display: none;
+    top: 100%;
+    font-size: 110%;
+    padding: 0;
+    margin: 0;
+    width: 30%;
 }
-	
-header nav ul {
-	display: none;
-	margin: 0;
-	padding: 0;	
+
+.navigation a {
+    text-decoration: none;
 }
-	
-header nav ul li {
-	list-style-type: none;
-	margin: 0;    
+
+.navigation li {
+    list-style-type: none;
+    margin-right: 10px;
+    color: #503503;
     padding-left: 20px;
     padding-right: 20px;
-	padding-top: 5px;
-	padding-bottom: 5px;	
-	text-align: left;
 }
 
-header nav ul li:hover {
-	background-color: #55390c;	
-}
-
-header nav ul li a {
-	display: inline-block;
-	text-decoration: none;
-	color: #ffffff;	
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
-
-.active {
-	font-weight: bold;
+.navigation li a {
+    color: #ffffff;
 }
 
 /* Main */

@@ -30,7 +30,7 @@ def products(request):
         'search_term': query,
     }
 
-    return render(request, 'products/full_collection.html', context)
+    return render(request, 'products/products.html', context)
 
 
 def product_detail(request, product_id):

@@ -99,7 +99,7 @@ header {
     position: absolute;
     background-color: #3e2908;
     width: 100%;
-    left: 0;
+    right: 0;
     display: none;
     top: 100%;
     font-size: 110%;

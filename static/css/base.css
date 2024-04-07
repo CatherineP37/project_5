@@ -77,10 +77,7 @@ header {
 }
 
 .menu_button {
-    font-size: 2rem;
-    margin-right: 15px;
-	border: none;
-	background-color: #3e2908;	  
+    font-size: 2rem;		  
 	color: #ffffff;
 }
 

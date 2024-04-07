@@ -21,3 +21,8 @@ def privacy(request):
     """ A view to return the privacy page """
 
     return render(request, 'home/privacy.html')
+
+def account(request):
+    """ A view to return the account page """
+
+    return render(request, 'home/account.html')

@@ -124,6 +124,11 @@ header {
     color: #ffffff;
 }
 
+.navigation ul li:hover {
+	background-color: #55390c;
+	
+}
+
 /* Main */
 
 .main-picture {

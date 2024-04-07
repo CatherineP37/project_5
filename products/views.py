@@ -9,7 +9,7 @@ from .forms import ProductForm
 
 # Create your views here.
 
-def full_collection(request):
+def products(request):
     """ A view to show full collection, including sorting and search queries """
 
     products = Product.objects.all()
@@ -44,7 +44,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
-    @login_required
+@login_required
 def add_product(request):
     """ Add a product to the store """
     if not request.user.is_superuser:

@@ -11,7 +11,11 @@ from .forms import ProductForm
 
 def products(request):
     """ A view to show the products """
-    return render(request, 'products/products.html')
+    products = Product.objects.all()
+    context = {
+        'products': products,        
+    }
+    return render(request, 'products/products.html', context)
 
 def product_detail(request, product_id):
     """ A view to show individual product details """

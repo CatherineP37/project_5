@@ -130,6 +130,11 @@ header {
 
 /* Main */
 
+main {
+	background-color: green;
+	margin: 100px 0 0 0;
+}
+
 .main-picture {
     background-image: url('/images/main.webp');	
     background-position: center center;

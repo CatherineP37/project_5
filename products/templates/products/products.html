@@ -3,11 +3,11 @@
 {% block content %}
 
 
-<h2>Full Collection</h2>
+<h2>Our Chocolate Bars</h2>
 <section class="collection">
 {% for product in products %}
 <div class="images">
-	<a href="{{ product.product_url }}">
+	<a href="{{ product.image_url }}">
 		<img src="{{ product.image }}" alt="{{ product.name }}">
 		<h2>{{ product.name }}</h2>
 		<h3>{{ product.weight }}</h3>

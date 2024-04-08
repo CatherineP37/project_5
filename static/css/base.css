@@ -257,6 +257,14 @@ form {
 	background-color: lightblue;
 }
 
+form input {
+	width: 70%;
+	padding: 1%;
+	margin: 0 auto;
+}
+
+
+
 
 /* Footer */
 

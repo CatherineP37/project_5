@@ -10,28 +10,8 @@ from .forms import ProductForm
 # Create your views here.
 
 def products(request):
-    """ A view to show full collection, including sorting and search queries """
-
-    products = Product.objects.all()
-    query = None
-
-    if request.GET:
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                messages.error(request, "You didn't enter a search term.")
-                return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
-
-    context = {
-        'products': products,
-        'search_term': query,
-    }
-
+    """ A view to show the products """
     return render(request, 'products/products.html', context)
-
 
 def product_detail(request, product_id):
     """ A view to show individual product details """

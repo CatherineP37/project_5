@@ -4,7 +4,9 @@
 
 <section class="product">
     <div class="product_image">
-        <img src="{{ product.image }}" alt="Chocolate raspberry bar">
+        <a href="{{ product.image.url }}" target="_blank">
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        </a>         
         <div class="information">
             <h2>{{ product.name }}</h2>
             <h3>{{ product.weight }}</h3>
@@ -12,7 +14,7 @@
         </div>
     </div>
     <div class="description">
-        <h3>{{ product.description }}</h3>
+        <p>{{ product.description }}</p>
         <h3>Ingredients</h3>
         <p>{{ product.ingredients }}</p>
         <h3>Nutritional Information</h3>
@@ -37,7 +39,7 @@
                     </span>
                     <span>Keep Shopping</span>
                 </a>
-                <input type="submit" value="Add to Bag">
+                <input type="submit" class="buttons" value="Add to Bag">
             </div>
             <input type="hidden" name="redirect_url" value="{{ request.path }}">
         </div>

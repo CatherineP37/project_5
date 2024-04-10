@@ -268,6 +268,12 @@ form input {
 	width: 30%;
 }
 
+.order_summary {
+	width: 70%;
+	background-color: orange;
+	margin: 0 auto;
+}
+
 
 
 

@@ -12,7 +12,7 @@
             <p>Order Summary ({{ product_count }})</p>
            
                  
-            </div>
+            <div class="order_summary">
             {% for item in bag_items %}
                 
                     
@@ -28,8 +28,9 @@
                 
                         <p>${{ item.product.price | calc_subtotal:item.quantity }}</p>
                   
-                </div>
+                
             {% endfor %}
+        </div>
             
                     <p>Order Total:</p>
                     <p>Delivery:</p>
@@ -96,7 +97,7 @@
                         <span>
                             <i class="fas fa-exclamation-circle"></i>
                         </span>
-                        <span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
+                        <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
                     </p>
                 </div>
             </form>

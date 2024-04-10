@@ -24,7 +24,7 @@ class Product(models.Model):
     ingredients = models.TextField()
     nutrition = models.TextField()
     weight = models.TextField()    
-    price = models.DecimalField(max_digits=6, decimal_places=2)      
+    price =  models.TextField()     
     image = models.ImageField(null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
 

@@ -9,10 +9,11 @@
         
 
     
-            <p>Order Summary ({{ product_count }})</p>
+            
            
                  
             <div class="order_summary">
+            <p>Order Summary ({{ product_count }})</p>
             {% for item in bag_items %}
                 
                     
@@ -30,20 +31,17 @@
                   
                 
             {% endfor %}
-        </div>
-            
-                    <p>Order Total:</p>
-                    <p>Delivery:</p>
-                    <p>Grand Total:</p>
+        
+                                            
               
-              
-                    <p>${{ total | floatformat:2 }}</p>
-                    <p>${{ delivery | floatformat:2 }}</p>
-                    <p><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                    <p>Total: ${{ total | floatformat:2 }}</p>
+                    <p>Delivery cost: ${{ delivery | floatformat:2 }}</p>
+                    <p><strong>Grand total: ${{ grand_total | floatformat:2 }}</strong></p>
         
    
             <p>Please fill out the form below to complete your order</p>
-            <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+        </div>
+            <form action="{% url 'checkout' %}" method="POST" id="payment-form" class="checkout">
                 {% csrf_token %}
                 <fieldset>
                     <legend>Details</legend>

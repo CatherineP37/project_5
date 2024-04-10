@@ -11,11 +11,7 @@
     
             <p>Order Summary ({{ product_count }})</p>
            
-                    <p>Item</p>
-             
-                <div>
-                    <p>Subtotal</p>
-                </div>
+                 
             </div>
             {% for item in bag_items %}
                 
@@ -88,7 +84,7 @@
                         <span>
                             <i class="fas fa-chevron-left"></i>
                         </span>
-                        <span>Adjust Bag</span>
+                        <span class="buttons">Adjust Bag</span>
                     </a>
                     <button id="submit-button">
                         <span>Complete Order</span>
@@ -100,7 +96,7 @@
                         <span>
                             <i class="fas fa-exclamation-circle"></i>
                         </span>
-                        <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                        <span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
                     </p>
                 </div>
             </form>

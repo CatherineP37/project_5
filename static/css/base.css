@@ -255,12 +255,17 @@ main {
 
 form {
 	background-color: lightblue;
+	margin: 3%;
 }
 
 form input {
 	width: 70%;
 	padding: 1%;
 	margin: 0 auto;
+}
+
+.quantity {
+	width: 30%;
 }
 
 

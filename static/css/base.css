@@ -130,8 +130,7 @@ header {
 
 /* Main */
 
-main {
-	background-color: green;
+main {	
 	margin: 100px 0 0 0;
 }
 
@@ -153,8 +152,7 @@ main {
 	
 }
 
-.collection {
-	background-color: purple;
+.collection {	
 	margin: 0 auto;
 }
 
@@ -269,8 +267,7 @@ form input {
 }
 
 .order_summary {
-	width: 70%;
-	background-color: orange;
+	width: 70%;	
 	margin: 0 auto;
 	padding: 2%;
 }
@@ -285,8 +282,6 @@ form input {
 .sb {
 	width: 70%;
 	margin: 0 auto;
-	background-color: yellow;
-
 }
 
 

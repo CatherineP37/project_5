@@ -94,10 +94,6 @@ These are wireframes for the mobile screens.
 
 ![Sign up form](images/menu.png)
 
-### Login form
-
-![Login form](images/login.png)
-
 ### Products
 
 ![User account home page](images/products.png)

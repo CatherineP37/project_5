@@ -100,6 +100,10 @@ These are wireframes for the mobile screens.
 
 ### Form for adjusting quantity of products in shopping bag
 
+![User account home page](images/quantity.png)
+
+### Shopping bag
+
 ![User account home page](images/bag.png)
 
 ## Bugs

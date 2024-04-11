@@ -254,7 +254,7 @@ main {
 }
 
 form {
-	background-color: lightblue;
+	background-color: #dfc9a6;
 	margin: 3%;
 }
 
@@ -272,11 +272,14 @@ form input {
 	width: 70%;
 	background-color: orange;
 	margin: 0 auto;
+	padding: 2%;
 }
 
 .checkout {
 	width: 70%;
 	margin: 0 auto;
+	padding: 2%;
+	background-color: #ffffff;
 }
 
 .sb {

@@ -4,7 +4,7 @@ This is an ecommerce store that sells handmade chocolate bars.
 
 Link to the deployed project:
 
-[Deployed website](https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/)
+[Deployed website](link goes here)
 
 ## Scope
 

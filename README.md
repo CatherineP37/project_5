@@ -16,6 +16,11 @@ The following must be included in the project:
 - Shopping bag
 - Checkout
 
+## Marketing
+
+The business offers free delivery after a customer spends over a certain amount of money on an order. The business will also have a Facebook page and an email newsletter
+that users can sign up to.
+
 ## Sitemap
 
 ![Sitemap](images/map.png)

@@ -8,17 +8,18 @@ def index(request):
 
     return render(request, 'home/index.html')
 
+
 def contact(request):
-    """ A view to return the contact page """
 
-    form = ContactForm(request.POST or None)
+	form = ContactForm()
 
-    if form.is_valid():
-        form.save()
-    
-    context['form']=form
-
-    return render(request, 'home/contact.html', context)
+	if request.method == 'POST':
+		form = ContactForm(request.POST)
+		if form.is_valid():
+			form.save()
+			
+	context = {'form':form}
+	return render(request, 'app/contact.html', context)
 
 def about(request):
     """ A view to return the about page """

@@ -32,7 +32,7 @@ class Product(models.Model):
         return self.name
 
 class Review(models.Model):
-    user = models.foreignKey(User, models.CASCADE)
+    user = models.ForeignKey(UserProfile, models.CASCADE)
     product = models.ForeignKey(Product, models.CASCADE)
     review = models.TextField(max_length=300)
 

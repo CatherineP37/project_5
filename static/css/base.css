@@ -362,6 +362,23 @@ footer p {
 	text-align: center;
 }
 
+.contact {
+	padding: 1%;
+	margin: 50px auto;
+}
+
+.contact input {
+	margin: 2% auto;
+	width: 90%;
+	padding: 1%;
+}
+
+textarea {
+	width: 90%;
+}
+
+
+
 /* Media query: tablets */
 
 @media screen and (min-width: 600px) {
@@ -460,6 +477,10 @@ footer p {
 
 .container {	
 	width: 70%;	
+}
+
+.contact {
+	width: 70%;
 }
 
 

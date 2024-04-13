@@ -4,12 +4,15 @@
 
 
 <h2>Contact</h2>
-<form method="POST" action="">
+<form method="POST" action="" class="contact">
     {% csrf_token %}
     {{ form.as_p }}
     <input type="text" name="name" aria-label="Enter your name" value="Enter your name">
     <input type="email" name="email" aria-label="Enter your email address" value="Enter your email address">
-    <input type="text" name="message" aria-label="Write your message" value="Write your message">
+    <br>
+    <label for="message">Message:</label>
+    <br>
+    <textarea name="message" class="message" aria-label="Write your message" value="Write your message"></textarea>
     <input type="submit" name="save" class="buttons" aria-label="Send message" value="Send message">
   </form>
 

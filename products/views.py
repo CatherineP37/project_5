@@ -22,7 +22,8 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    reviews = Review.objects.all()
+    
+
     
     context = {
         'product': product,        
@@ -100,3 +101,9 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+def Review(request):
+    if request.method == "GET":
+        review = request.GET.get('review')
+        Review(review=review).save()
+        return redirect('product_detail')

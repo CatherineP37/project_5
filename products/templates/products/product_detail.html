@@ -21,11 +21,29 @@
         <p>{{ product.nutrition }}</p>              
     </div>
     <div class="reviews">
+        <h2>Reviews</h2>
+        {% if review in reviews %}
         {% for review in reviews %}   
    
         <p>{{ review.name }}</p>
         <p>{{ review.review }}</p>
         {% endfor %}
+        {% else %}
+        <p>There are no reviews for this product yet.</p>
+        {% if request.user.is_authenticated %}
+        <h2>Write a review of this product</h2>      
+        <form method="POST" action="" class="contact">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="text" name="name" aria-label="Enter your name" value="Enter your name">           
+            <label for="message">Review:</label>
+            <br>
+            <textarea name="review" class="message" aria-label="Write your review" value="Write your review"></textarea>
+            <input type="submit" name="save" class="buttons" aria-label="Post review" value="Post review">
+          </form>
+        {% else %} 
+        <a href="{% url 'account_login' %}">Sign in to leave a review</a>
+       
     </div>
     
 </section> 

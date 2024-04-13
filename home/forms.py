@@ -3,7 +3,7 @@ from django.forms import ModelForm
 from .models import Contact
 
 
-class BookAppointment(ModelForm):
+class Contact(ModelForm):
     class Meta:
         model = Contact
       

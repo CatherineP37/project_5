@@ -9,7 +9,18 @@ def index(request):
 
 def contact(request):
     """ A view to return the contact page """
-
+    
+    context = {}
+    form = Contact()
+    
+    if request.method == 'POST':
+        form = Contact(data=request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.user = request.user            
+            instance.save()
+            return redirect('contact')            
+    
     return render(request, 'home/contact.html')
 
 def about(request):

@@ -19,7 +19,7 @@ def contact(request):
 			form.save()
 			
 	context = {'form':form}
-	return render(request, 'app/contact.html', context)
+	return render(request, 'home/contact.html', context)
 
 def about(request):
     """ A view to return the about page """

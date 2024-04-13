@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import Contact
+from .forms import ContactForm
 
 # Create your views here.
 
@@ -11,12 +11,12 @@ def index(request):
 def contact(request):
     """ A view to return the contact page """
 
-    form = Contact(request.POST or None)
+    form = ContactForm(request.POST or None)
 
     if form.is_valid():
         form.save()
     
-    context['form'] = form
+    context['form']=form
 
     return render(request, 'home/contact.html', context)
 

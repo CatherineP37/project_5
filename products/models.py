@@ -37,6 +37,9 @@ class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     review = models.TextField(max_length=300)
 
+    def __str__(self):
+        return str(self.product.name)
+
 
 
 

@@ -174,10 +174,6 @@ Code Institute
 
 stackoverflow
 
-Coding Stuff
-
-GeeksforGeeks
-
 Dennis Ivy
 
 ## Acknowledgements

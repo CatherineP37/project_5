@@ -30,3 +30,12 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+class Review(models.Model):
+    name = models.TextField(max_length=70)
+    product = models.ForeignKey(Product, models.CASCADE)
+    review = models.TextField(max_length=300)
+
+    def __str__(self):
+        return str(self.id)
+

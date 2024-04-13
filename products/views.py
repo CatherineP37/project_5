@@ -21,16 +21,9 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-
-    if request.method == "GET":
-        product_id = request.GET.get('product_id')
-        product = Product.objects.get(id=product_id)
-        user = request.user
-        Review(user=user, product=product, review=review.save())
-
+    
     context = {
-        'product': product,
-        'id': product_id,
+        'product': product,        
     }
 
     return render(request, 'products/product_detail.html', context)

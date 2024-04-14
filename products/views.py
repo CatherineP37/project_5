@@ -45,7 +45,7 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
     def __str__(self):
-        return self.name
+        return self.review.title
 
 def update_review(request, pk):
 

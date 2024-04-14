@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<p>Are you sure you want to delete your review?</p>
+
+<form method="POST">
+
+    <a href="{% url 'product_detail' %}">Cancel</a>
+    <input type="submit" name="Confirm">
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -38,6 +38,8 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 def update_review(request, pk):
+
+    review = Review.objects.get(id=pk)
     form = createReview()
     context = {'form':form}
     return render(request, 'products/product_detail.html', context)

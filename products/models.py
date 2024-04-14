@@ -34,7 +34,7 @@ class Product(models.Model):
 
 class Review(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    title = models.TextField(max_length=300)
     review = models.TextField(max_length=300)
 
     def __str__(self):

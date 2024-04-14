@@ -17,25 +17,35 @@ def products(request):
     }
     return render(request, 'products/products.html', context)
 
-def product_detail(request, product_id):
-    """ A view to show individual product details """
-
-    product = get_object_or_404(Product, pk=product_id)
+def create_review(request):
     form = createReview()
     if request.method == 'POST':
         form = Reviews(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/')
+            return redirect('/')   
     
-
-    
-    context = {
-        'product': product,
+    context = {       
         'form': form        
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def product_detail(request, product_id):
+    """ A view to show individual product details """
+
+    product = get_object_or_404(Product, pk=product_id)
+    
+    context = {
+        'product': product,
+             
+    }
+
+    return render(request, 'products/product_detail.html', context)
+
+    def __str__(self):
+        return self.name
 
 def update_review(request, pk):
 
@@ -47,14 +57,20 @@ def update_review(request, pk):
         if form.is_valid():
             form.save()
             return redirect('/')
-   
+               
 
     context = {'form':form}
     return render(request, 'products/product_detail.html', context)
+    def __str__(self):
+        return self.name
 
 def delete_review(request, pk):
-    context = {}
+    review = Review.objects.get(id=pk)
+    context = {'item':order}
     return render(request, 'products/delete_review.html', context)
+
+    def __str__(self):
+        return self.name
 
 @login_required
 def add_product(request):

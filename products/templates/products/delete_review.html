@@ -3,9 +3,9 @@
 {% block content %}
 
 
-<p>Are you sure you want to delete your review?</p>
+<p>Are you sure you want to delete your review "{{item}}"?</p>
 
-<form method="POST">
+<form method="POST" action="{% url 'delete_review' item.id %}">
 
     <a href="{% url 'product_detail' %}">Cancel</a>
     <input type="submit" name="Confirm">

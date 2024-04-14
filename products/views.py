@@ -52,6 +52,10 @@ def update_review(request, pk):
     context = {'form':form}
     return render(request, 'products/product_detail.html', context)
 
+def delete_review(request, pk):
+    context = {}
+    return render(request, 'products/delete_review.html', context)
+
 @login_required
 def add_product(request):
     """ Add a product to the store """
@@ -122,6 +126,7 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
 
 
 

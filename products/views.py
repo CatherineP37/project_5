@@ -22,6 +22,10 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     form = Reviews()
+    if request.method == 'POST':
+        form = Reviews(request.POST)
+        if form.is_valid():
+            form.save()
     
 
     

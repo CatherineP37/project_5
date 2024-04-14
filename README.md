@@ -73,7 +73,7 @@ Epic - Store management
 
 ## Wireframes
 
-These are wireframes for the mobile screens.
+Here are some of the wireframes I made for the mobile screens:
 
 ![wireframes](images/wireframes.png)
 

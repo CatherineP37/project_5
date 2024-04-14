@@ -66,11 +66,14 @@ def update_review(request, pk):
 
 def delete_review(request, pk):
     review = Review.objects.get(id=pk)
+    if request.method == "POST":
+        review.delete()
+        return redirect('/')
+
     context = {'item':order}
     return render(request, 'products/delete_review.html', context)
 
-    def __str__(self):
-        return self.name
+   
 
 @login_required
 def add_product(request):

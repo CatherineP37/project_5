@@ -7,6 +7,9 @@
 
 <form method="POST" action="{% url 'delete_review' item.id %}">
 
+    {% csrf_token %}
+    {{ form.as_p }} 
+
     <a href="{% url 'product_detail' %}">Cancel</a>
     <input type="submit" name="Confirm">
 

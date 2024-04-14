@@ -40,7 +40,15 @@ def product_detail(request, product_id):
 def update_review(request, pk):
 
     review = Review.objects.get(id=pk)
-    form = createReview()
+    form = createReview(instance=review)
+
+    if request.method == 'POST':
+        form = createReview(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+   
+
     context = {'form':form}
     return render(request, 'products/product_detail.html', context)
 

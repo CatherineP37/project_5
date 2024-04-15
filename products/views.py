@@ -32,19 +32,7 @@ def products(request):
 
     return render(request, 'products/products.html', context)
 
-def create_review(request):
-    form = createReview()
-    if request.method == 'POST':
-        form = Reviews(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/')   
-    
-    context = {       
-        'form': form        
-    }
 
-    return render(request, 'products/product_detail.html', context)
 
 
 def product_detail(request, product_id):
@@ -62,6 +50,20 @@ def product_detail(request, product_id):
     def __str__(self):
         return self.review.title
 
+def create_review(request):
+    form = createReview()
+    if request.method == 'POST':
+        form = Reviews(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/')   
+    
+    context = {       
+        'form': form        
+    }
+
+    return render(request, 'products/product_detail.html', context)
+
 def update_review(request, pk):
 
     review = Review.objects.get(id=pk)
@@ -75,7 +77,7 @@ def update_review(request, pk):
                
 
     context = {'form':form}
-    return render(request, 'products/product_detail.html', context)
+    return render(request, 'products/update_review.html', context)
     def __str__(self):
         return self.name
 

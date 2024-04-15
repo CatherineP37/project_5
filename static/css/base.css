@@ -295,7 +295,7 @@ form input {
 footer {
 	background-color: #3e2908;
 	width: 100%;
-    margin: auto 0 0 0;
+    margin: 0 auto;
     padding: 20px 0 0 0;
 }
 
@@ -317,17 +317,24 @@ footer p {
 	background-color: #3e2908;
 	width: 90%;
 	margin: 0 auto;
+	background-color: pink;
 }
 
-#subscribe {
+.input {
 	width: 70%;
-    margin: 10px 0 0 10%;
-	padding: 1%;
+	margin: 0;
+	background-color: yellow;
 }
+
+.email {
+	width: 25%;
+	font-size: 1em;
+}
+
 
 .button {
 	padding: 1%;
-	border-radius: 3px;
+	border-radius: 3px;	
 }
 
 .social i {

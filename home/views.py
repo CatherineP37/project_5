@@ -25,15 +25,15 @@ def contact(request):
 def events(request):
     
     events = Event.objects.all() 
-	form = AttendanceForm()
+    form = AttendanceForm()
 
-	if request.method == 'POST':
-		form = AttendanceForm(request.POST)
-		if form.is_valid():
-			form.save()
+    if request.method == 'POST':
+	    form = AttendanceForm(request.POST)
+	    if form.is_valid():
+		    form.save()
 			
-	context = {'form':form}
-	return render(request, 'home/events.html', context)
+    context = {'form':form}
+    return render(request, 'home/events.html', context)
 
 
 

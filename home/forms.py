@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import ModelForm
-from .models import Contact
+from .models import Contact, Attendance
 
 
 class ContactForm(ModelForm):

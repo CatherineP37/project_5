@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<h2>Events</h2>
+
+{% for event in events %}     
+<h3>{{ event.name }}</h3>
+<p>{{ event.time }}</p>
+<p>{{ event.date }}</p>
+<p>{{ event.description }}</p>
+{% endfor %}
+
+<br>
+<h3>If you'd like to attend one of our events please fill in the form below</h3>
+
+<form method="POST" action="" class="contact">
+    {% csrf_token %}
+    {{ form.as_p }}    
+     
+    <input type="submit" name="save" class="buttons" aria-label="attend event" value="attend event">
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

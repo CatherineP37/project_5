@@ -21,6 +21,22 @@ def contact(request):
 	context = {'form':form}
 	return render(request, 'home/contact.html', context)
 
+
+def events(request):
+    
+    events = Event.objects.all() 
+	form = AttendanceForm()
+
+	if request.method == 'POST':
+		form = AttendanceForm(request.POST)
+		if form.is_valid():
+			form.save()
+			
+	context = {'form':form}
+	return render(request, 'home/events.html', context)
+
+
+
 def about(request):
     """ A view to return the about page """
 

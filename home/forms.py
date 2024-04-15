@@ -7,4 +7,9 @@ class ContactForm(ModelForm):
     class Meta:
         model = Contact
         fields = "__all__"
+
+class AttendanceForm(ModelForm):
+    class Meta:
+        model = Attendance
+        fields = "__all__"
       

@@ -72,7 +72,7 @@
     <header>       
 
         <a href="{% url 'index' %}" class="logo">CHOCOLATE TREATS</a>
-		        
+		<div class="icons">     
         <div class="bag">
             <a href="{% url 'view_bag' %}">
                 <i class="fa-solid fa-bag-shopping"></i>  
@@ -88,7 +88,7 @@
         
         <input type="checkbox" id="menu" name="menu">
         <label for="menu" class="menu_button"><i class="fa fa-bars"></i></label>                 
-                                               
+                                         
         <nav class = "navigation">
             <ul id="list">
               <li>
@@ -123,14 +123,15 @@
             </li>                                   
             {% endif %}
         </ul>
-      </nav>   
+      </nav> 
+    </div>  
           
     </header>                
                 
 
     
 	
-	
+ <div class="offer">
 	
  {% if messages %}
         <div class="message-container">
@@ -150,7 +151,8 @@
         </div>
     {% endif %}
     
-       <h3 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h3>                
+       <h3 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h3>   
+    </div>             
    
        
        

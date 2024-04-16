@@ -56,10 +56,17 @@ header {
 	margin: 0 0 0 3%;
 }
 
+.icons {
+	background-color: purple;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 40%;
+}
+
 .bag {	
-	padding: 0;
-	width: 5%;
-	margin: 0 10px 0 80%;
+	padding: 0 10%;	
+	background-color: yellow;
+	margin: 0 10%;
 }
 
 .bag i {
@@ -81,7 +88,9 @@ header {
 .menu_button {
     font-size: 2rem;		  
 	color: #ffffff;
-	margin-right: 20px;
+	background-color: pink;
+	padding: 0;	
+	text-align: center;
 }
 
 .navigation {
@@ -113,6 +122,17 @@ header {
 
 .navigation ul li:hover {
 	background-color: #55390c;	
+}
+
+/* Offer */
+
+.offer {
+	background-color: blue;
+	margin: 100px 0 0 0;
+}
+
+.offer h3 {
+	text-align: center;	
 }
 
 /* Main */
@@ -388,7 +408,15 @@ textarea {
 /* Media query: tablets */
 
 @media screen and (min-width: 600px) {
-	
+
+/* Header */
+
+.icons {
+	width: 20%;
+}
+
+/* Main */
+
 .main-picture {    
     height: 100vh;
     width: 100%;   
@@ -423,7 +451,13 @@ textarea {
 		width: 50%;
      }
 
-    
+	/* Header */
+
+	.icons {
+		width: 15%;
+	}
+
+    /* Main */
 
 	.introduction {
 	display: grid;
@@ -440,16 +474,6 @@ textarea {
     width: 100%;
    
 }
-
-.info {
-	width: 70%;	
-}
-
-.footer {
-	display: grid;	
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
 
 .search {	
 	width: 50%;	
@@ -470,6 +494,17 @@ textarea {
 	width: 70%;	
 }
 
+/* Footer */
+
+.info {
+	width: 70%;	
+}
+
+.footer {
+	display: grid;	
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .contact {
 	width: 70%;
 }
@@ -480,7 +515,10 @@ textarea {
 /* Media query: wide desktop */
 
 @media screen and (min-width: 1320px) {
-	.search {	
+
+/* Main */
+
+.search {	
 	width: 30%;	
 }
 

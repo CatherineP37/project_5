@@ -2,14 +2,15 @@
 {% load static %}
 {% block content %}
 
-
-<h2>Contact</h2>
-<form method="POST" action="" class="contact">
+<section class="about">
+  <h2>Contact</h2>
+  <form method="POST" action="" class="contact">
     {% csrf_token %}
     {{ form.as_p }}    
      
     <input type="submit" name="save" class="buttons" aria-label="Send message" value="Send message">
   </form>
+</section>
 
 
 

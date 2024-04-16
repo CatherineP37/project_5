@@ -7,6 +7,9 @@ class ContactForm(ModelForm):
     class Meta:
         model = Contact
         fields = "__all__"
+        widgets={
+            'message' : forms.Textarea(attrs={'style': "width:100%;"})
+        }
 
 class AttendanceForm(ModelForm):
     class Meta:

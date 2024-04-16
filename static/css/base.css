@@ -316,6 +316,21 @@ form input {
 	display: block;
 }
 
+.about {
+	margin: 20px auto;
+	padding: 2%;
+	width: 90%;
+	background-color: #dfc9a6;	
+}
+
+.about h4 {
+	text-align: center;
+	color: #55390c;
+}
+
+.about form textarea {
+	width: 70%;
+}
 
 
 

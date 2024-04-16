@@ -308,8 +308,9 @@ footer p {
 }
 
 .newsletter {
-	background-color: #3e2908;
+	background-color: red;
 	width: 90%;
+	margin: 0 auto;
 
 }
 
@@ -337,6 +338,13 @@ footer p {
 	border-radius: 3px;	
 }
 
+.social {
+	background-color: blue;
+	padding: 5px 5%;
+	width: 90%;
+	margin: 0 auto;
+}
+
 .social i {
 	color: #ffffff;
 	
@@ -353,7 +361,9 @@ footer p {
 }
 
 .links {
-	background-color: #3e2908;	
+	background-color: pink;
+	width: 90%;
+	margin: 0 auto;	
 }
 
 .links ul li {

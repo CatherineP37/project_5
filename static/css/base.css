@@ -304,6 +304,18 @@ form input {
 	background-color: #dfc9a6;
 }
 
+.form-check-input {
+	position: absolute;
+	margin-top: .3rem;
+	margin-left: 2rem;
+}
+
+.login {
+	margin: 0 auto;	
+	width: 100%;
+	display: block;
+}
+
 
 
 

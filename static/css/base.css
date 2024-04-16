@@ -90,7 +90,7 @@ header {
 	color: #ffffff;
 	background-color: pink;
 	padding: 0;	
-	text-align: center;
+	text-align: center;	
 }
 
 .navigation {
@@ -99,9 +99,9 @@ header {
     width: 100%;
     right: 0;
     display: none;
+	padding: 2%;
     top: 100%;
-    font-size: 110%;
-    padding: 0;
+    font-size: 110%;   
     margin: 0;
     width: 30%;
 }
@@ -271,8 +271,11 @@ form input {
 	margin: 0 auto;
 }
 
+
 .quantity {
-	width: 30%;
+	background-color: #dfc9a6;
+	width: 90%;
+	margin: 20px auto;
 	padding: 2%;
 }
 
@@ -293,6 +296,14 @@ form input {
 	width: 70%;
 	margin: 0 auto;
 }
+
+.reviews {
+	margin: 20px auto;
+	padding: 2%;
+	width: 90%;
+	background-color: #dfc9a6;
+}
+
 
 
 
@@ -494,6 +505,10 @@ textarea {
 	width: 70%;	
 }
 
+.quantity {
+	padding: 2% 30%;
+}
+
 /* Footer */
 
 .info {
@@ -522,11 +537,9 @@ textarea {
 	width: 30%;	
 }
 
-
 .main-picture {    
     height: 120vh;
-    width: 100%;
-   
+    width: 100%;   
 }
 
 .container {	

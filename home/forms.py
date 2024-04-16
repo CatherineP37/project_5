@@ -15,4 +15,5 @@ class AttendanceForm(ModelForm):
     class Meta:
         model = Attendance
         fields = "__all__"
+       
       

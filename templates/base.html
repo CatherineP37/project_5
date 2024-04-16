@@ -69,41 +69,27 @@
 
 <body>
     <div class="wrapper">
-    <header>
-
-        <!-- Logo -->
+    <header>       
 
         <a href="{% url 'index' %}" class="logo">CHOCOLATE TREATS</a>
-		
 		        
-            
+        <div class="bag">
+            <a href="{% url 'view_bag' %}">
+                <i class="fa-solid fa-bag-shopping"></i>  
+            </a>                      
+        <p>
+            {% if grand_total %}
+                ${{ grand_total|floatformat:2 }}
+            {% else %}
+                $0.00
+            {% endif %}
+        </p>
+        </div>            
         
-                        <div class="bag">
-                            <a href="{% url 'view_bag' %}">
-                            <i class="fa-solid fa-bag-shopping"></i>  
-                        </a>                      
-                        <p>
-                            {% if grand_total %}
-                                ${{ grand_total|floatformat:2 }}
-                            {% else %}
-                                $0.00
-                            {% endif %}
-                        </p>
-                        </div>
-                
-                          
-                
-          
-
-
-
-	   	</ul>   
-           <input type="checkbox" id="menu" name="menu">
-           <label for="menu" class="menu_button"><i class="fa fa-bars"></i></label>   
-    
-          <!-- Menu -->      
-    
-          <nav class = "navigation">
+        <input type="checkbox" id="menu" name="menu">
+        <label for="menu" class="menu_button"><i class="fa fa-bars"></i></label>                 
+                                               
+        <nav class = "navigation">
             <ul id="list">
               <li>
                 <a href="{% url 'index' %}">Home</a>
@@ -137,15 +123,13 @@
             </li>                                   
             {% endif %}
         </ul>
-      </nav>                     
-                        
-                   
+      </nav>   
+          
+    </header>                
+                
 
     
-
-		
-			
-    </header>
+	
 	
 	
  {% if messages %}

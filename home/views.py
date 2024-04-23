@@ -33,7 +33,9 @@ def events(request):
 	    if form.is_valid():
 		    form.save()
 			
-    context = {'form':form}
+    context = {'form':form,
+               'events':events,
+              }
     return render(request, 'home/events.html', context)
 
 

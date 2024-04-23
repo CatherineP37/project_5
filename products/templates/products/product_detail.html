@@ -39,8 +39,12 @@
         {{ form.as_p }}            
         <input type="submit" name="save" class="buttons" aria-label="Post review" value="Post review">
       </form>
-      <a href="{% url 'update_review' reviews.id %}">Update review</a>
-      <a href="{% url 'delete_review' reviews.id %}">Delete review</a>
+      {% for review in reviews %}        
+      
+      <a href="{% url 'update_review' review.id %}">Update review</a>
+      <a href="{% url 'delete_review' review.id %}">Delete review</a>
+
+      {% endfor %}
     {% else %} 
     <a href="{% url 'account_login' %}" class="buttons">Sign in to leave a review</a>
     {% endif %}

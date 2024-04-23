@@ -42,6 +42,7 @@ def product_detail(request, product_id):
     
     context = {
         'product': product,
+        'reviews': reviews,
              
     }
 

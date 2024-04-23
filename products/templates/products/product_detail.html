@@ -28,8 +28,8 @@
     <h2>Reviews</h2>
     
     {% for review in reviews %}     
-    <p>{{ review.name }}</p>
-    <p>{{ review.review }}</p>
+    <p>{{ reviews.name }}</p>
+    <p>{{ reviews.review }}</p>
     {% endfor %}
     
     {% if request.user.is_authenticated %}

@@ -9,7 +9,7 @@ class Contact(models.Model):
 
 class Event(models.Model):    
     time = models.DateTimeField()
-    date = models.DateTimeField()    
+    title = models.TextField(null=False, blank=False, default='')
     location = models.TextField(null=False, blank=False, default='')
     description = models.TextField(null=False, blank=False, default='')
 

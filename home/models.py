@@ -7,9 +7,9 @@ class Contact(models.Model):
     email = models.EmailField(max_length=300, null=False, blank=False)
     message = models.TextField(null=False, blank=False, default='')
 
-class Event(models.Model):    
-    time = models.DateTimeField()
-    title = models.TextField(null=False, blank=False, default='')
+class Event(models.Model): 
+    title = models.TextField(null=False, blank=False, default='')   
+    time = models.DateTimeField()    
     location = models.TextField(null=False, blank=False, default='')
     description = models.TextField(null=False, blank=False, default='')
 

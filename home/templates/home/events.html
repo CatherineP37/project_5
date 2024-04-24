@@ -6,9 +6,8 @@
 <h2>Events</h2>
 
 {% for event in events %}     
-<h3>{{ event.name }}</h3>
+<h3>{{ event.title }}</h3>
 <p>{{ event.time }}</p>
-<p>{{ event.date }}</p>
 <p>{{ event.description }}</p>
 {% endfor %}
 

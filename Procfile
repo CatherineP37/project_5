@@ -1,1 +1,1 @@
-web: gunicorn chocolate_treats.wsgi:applicationh
+web: gunicorn chocolate_treats.wsgi:application

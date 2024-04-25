@@ -9,9 +9,8 @@ class Product(models.Model):
     ingredients = models.TextField()
     nutrition = models.TextField()
     weight = models.TextField()    
-    price = models.DecimalField(max_digits=6, decimal_places=2)   
-    image = models.ImageField(null=True, blank=True)    
-    featured_image = CloudinaryField('image', default='placeholder')
+    price = models.DecimalField(max_digits=6, decimal_places=2)     
+    image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
         return self.name

@@ -20,7 +20,6 @@ if os.path.isfile('env.py'):
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -117,11 +116,8 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'chocolate_treats.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-
 
 # DATABASES = {
 #    'default': {
@@ -130,11 +126,9 @@ WSGI_APPLICATION = 'chocolate_treats.wsgi.application'
 #    }
 #}
 
-
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -183,7 +177,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 
 
 # Stripe

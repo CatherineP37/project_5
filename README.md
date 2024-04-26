@@ -4,7 +4,7 @@ This is an ecommerce store that sells handmade chocolate bars.
 
 Link to the deployed project:
 
-[Deployed website](link goes here)
+[Deployed website](https://p-5-bf8a9d578875.herokuapp.com/)
 
 ## Scope
 
@@ -15,6 +15,8 @@ The following must be included in the project:
 - Accounts
 - Shopping bag
 - Checkout
+
+A filtering feature is not necessary in the app because the company only sells chocolate bars and they are all the same price.
 
 ## Marketing
 
@@ -180,6 +182,8 @@ Codemy.com
 
 ## Acknowledgements
 
+Code Institute tutors
 
+My Mentor
 
 

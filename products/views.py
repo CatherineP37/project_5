@@ -3,8 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product
-from .forms import ProductForm, Review, createReview
+from .models import Product, Review
+from .forms import createReview
 
 
 # Create your views here.

@@ -355,21 +355,13 @@ footer p {
 	background-color: red;
 	width: 90%;
 	margin: 0 auto;
-
 }
 
 #mc_embed_signup {
-	background:#dfc9a6; 
-	false;clear:left; 
-	font:14px Helvetica,Arial,sans-serif; 
+	background:#dfc9a6;
+	font: inter; 
+	color: #3e2908;
 	width: 90%;
-}
-
-.subscribe {
-	background-color: #3e2908;
-	width: 90%;
-	margin: 0 auto;
-	background-color: pink;
 }
 
 .input {

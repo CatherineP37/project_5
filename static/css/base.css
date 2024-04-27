@@ -146,7 +146,7 @@ main {
 }
 
 .main-picture {
-    background-image: url('/static/images/main.webp');	
+    background-image: url('staticfiles/images/main.webp');	
     background-position: center center;
     height: 70vh;
     width: 100%;

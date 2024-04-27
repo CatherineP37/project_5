@@ -358,6 +358,13 @@ footer p {
 
 }
 
+#mc_embed_signup {
+	background:#dfc9a6; 
+	false;clear:left; 
+	font:14px Helvetica,Arial,sans-serif; 
+	width: 90%;
+}
+
 .subscribe {
 	background-color: #3e2908;
 	width: 90%;

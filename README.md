@@ -29,6 +29,16 @@ that users can sign up to.
 
 chocolate bar, sugar free chocolate, sugar free chocolate bar, dairy free chocolate, filled chocolate bars, hand made chocolates, dark chocolate, vegan chocolate bars, vegan chocolate, dark chocolate bar
 
+### Facebook page
+
+Here is the link to the Facebook page for the business:
+
+[Facebook](https://www.facebook.com/profile.php?id=61558026373048)
+
+Here is an image of the Facebook page:
+
+![Sitemap](images/facebook.png)
+
 ## Sitemap
 
 ![Sitemap](images/map.png)

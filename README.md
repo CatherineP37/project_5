@@ -25,6 +25,10 @@ The business is a B2C business that regularly engages with customers by holding 
 The business offers free delivery after a customer spends over a certain amount of money on an order. The business will also have a Facebook page and an email newsletter
 that users can sign up to.
 
+### Keywords
+
+chocolate bar, sugar free chocolate, sugar free chocolate bar, dairy free chocolate, filled chocolate bars, hand made chocolates, dark chocolate, vegan chocolate bars, vegan chocolate, dark chocolate bar
+
 ## Sitemap
 
 ![Sitemap](images/map.png)

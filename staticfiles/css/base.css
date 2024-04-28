@@ -56,16 +56,14 @@ header {
 	margin: 0 0 0 3%;
 }
 
-.icons {
-	background-color: purple;
+.icons {	
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 40%;
 }
 
 .bag {	
-	padding: 0 10%;	
-	background-color: yellow;
+	padding: 0 10%;		
 	margin: 0 10%;
 }
 
@@ -87,8 +85,7 @@ header {
 
 .menu_button {
     font-size: 2rem;		  
-	color: #ffffff;
-	background-color: pink;
+	color: #ffffff;	
 	padding: 0;	
 	text-align: center;	
 }
@@ -126,8 +123,7 @@ header {
 
 /* Offer */
 
-.offer {
-	background-color: blue;
+.offer {	
 	margin: 100px 0 0 0;
 }
 
@@ -146,7 +142,7 @@ main {
 }
 
 .main-picture {
-    background-image: url('/static/images/main.webp');	
+    background-image: url('staticfiles/images/main.webp');	
     background-position: center center;
     height: 70vh;
     width: 100%;
@@ -351,23 +347,15 @@ footer p {
 	color: #ffffff;
 }
 
-.newsletter {
-	background-color: red;
+.newsletter {	
 	width: 90%;
 	margin: 0 auto;
 }
 
-#mc_embed_signup {
-	background:#dfc9a6;
-	font: inter; 
-	color: #3e2908;
-	width: 90%;
-}
 
 .input {
 	width: 70%;
-	margin: 0;
-	background-color: yellow;
+	margin: 0;	
 }
 
 .email {
@@ -381,8 +369,7 @@ footer p {
 	border-radius: 3px;	
 }
 
-.social {
-	background-color: blue;
+.social {	
 	padding: 5px 5%;
 	width: 90%;
 	margin: 0 auto;
@@ -403,8 +390,7 @@ footer p {
 	margin: 0 3% 0 0 
 }
 
-.links {
-	background-color: pink;
+.links {	
 	width: 90%;
 	margin: 0 auto;	
 }

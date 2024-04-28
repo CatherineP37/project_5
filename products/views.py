@@ -61,21 +61,7 @@ def product_detail(request, product_id):
     def __str__(self):
         return self.review.title
 
-def create_review(request):
-    print('create_review view')
-    
-    if request.method == 'POST':
-        form = Reviews(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/')   
-    
-    context = {       
-        'form': form,
-                
-    }
 
-    return render(request, 'products/product_detail.html', context)
 
 def update_review(request, pk):
 

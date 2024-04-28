@@ -60,7 +60,8 @@ def create_review(request):
             return redirect('/')   
     
     context = {       
-        'form': form        
+        'form': form,
+        'reviews': reviews,        
     }
 
     return render(request, 'products/product_detail.html', context)

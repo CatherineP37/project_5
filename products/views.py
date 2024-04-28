@@ -43,7 +43,7 @@ def product_detail(request, product_id):
     context = {
         'product': product,
         'reviews': reviews,
-        'form': form,
+        
              
     }
 
@@ -62,7 +62,7 @@ def create_review(request):
     
     context = {       
         'form': form,
-        'reviews': reviews,        
+                
     }
 
     return render(request, 'products/product_detail.html', context)

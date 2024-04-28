@@ -43,7 +43,7 @@ def product_detail(request, product_id):
     form : createReview()
 
     if request.method == 'POST':
-        form = form(request.POST)
+        form = createReview(request.POST)
         if form.is_valid():
             form.save()
             return redirect('/')  

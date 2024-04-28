@@ -139,14 +139,6 @@ header {
 
 main {	
 	margin: 100px 0 0 0;
-	background-color: blue;
-}
-
-.introduction {
-	background-color: #dfc9a6;
-	height: 500px;
-	width: 90%;
-	margin: 0 auto;
 	
 }
 
@@ -471,23 +463,10 @@ textarea {
 		width: 15%;
 	}
 
-    /* Main */
-
-	.introduction {
-	display: grid;
-    grid-template-columns: 1fr 1fr;
-    }
-
-.left {
-	padding: 200px 0 0 0;
-}
+ 
 
 
-.main-picture {    
-    height: 80vh;
-    width: 100%;
-   
-}
+
 
 .search {	
 	width: 50%;	
@@ -540,10 +519,6 @@ textarea {
 	width: 30%;	
 }
 
-.main-picture {    
-    height: 120vh;
-    width: 100%;   
-}
 
 .container {	
 	width: 50%;	

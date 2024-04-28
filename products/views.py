@@ -37,12 +37,14 @@ def products(request):
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
+    print('product detail view')
     reviews = Review.objects.all()    
     product = get_object_or_404(Product, pk=product_id)
     
     context = {
         'product': product,
         'reviews': reviews,
+        'form' : createReview()
         
              
     }
@@ -53,7 +55,8 @@ def product_detail(request, product_id):
         return self.review.title
 
 def create_review(request):
-    form = createReview()
+    print('create_review view')
+    
     if request.method == 'POST':
         form = Reviews(request.POST)
         if form.is_valid():

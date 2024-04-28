@@ -40,6 +40,12 @@ def product_detail(request, product_id):
     print('product detail view')
     reviews = Review.objects.all()    
     product = get_object_or_404(Product, pk=product_id)
+
+    if request.method == 'POST':
+        form = Reviews(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/')  
     
     context = {
         'product': product,

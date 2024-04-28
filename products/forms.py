@@ -6,5 +6,5 @@ from .models import Product, Review
 class createReview(forms.ModelForm):
     class Meta:
         model = Review
-        fields = "__all__"
+        exclude = ('user')
       

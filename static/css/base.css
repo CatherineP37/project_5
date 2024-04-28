@@ -139,23 +139,14 @@ header {
 
 main {	
 	margin: 100px 0 0 0;
-}
-
-.main-picture {
-    background-image: url('staticfiles/images/main.webp');	
-    background-position: center center;
-    height: 70vh;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.left {
-	background-color: #ffffff;
+	background-color: blue;
 }
 
 .introduction {
-	background-color: #ffffff;
+	background-color: #dfc9a6;
+	height: 500px;
+	width: 90%;
+	margin: 0 auto;
 	
 }
 

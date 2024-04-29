@@ -6,6 +6,7 @@ from django.db.models.functions import Lower
 from .models import Product, Review
 from .forms import createReview
 
+
 # Create your views here.
 
 def products(request):
@@ -42,7 +43,8 @@ def product_detail(request, product_id):
         form = createReview(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/')  
+            messages.success(request, ('Thanks for your review!'))
+            return render(request, 'product_detail.html', {})  
     
     context = {
         'product': product,

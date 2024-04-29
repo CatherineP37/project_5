@@ -25,6 +25,11 @@
 </section> 
 <div class="reviews">
     <h2>Reviews</h2>
+    {% if messages %}
+        {% for message in messages %}
+            {{ message }}
+        {% endfor %}
+    {% endif %}
     
     {% for review in reviews %}     
     <p>{{ reviews.name }}</p>

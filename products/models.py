@@ -15,8 +15,7 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-class Review(models.Model):    
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+class Review(models.Model): 
     title = models.TextField(max_length=300)
     review = models.TextField(max_length=300)
     product = models.ForeignKey(Product, on_delete=models.SET_NULL,

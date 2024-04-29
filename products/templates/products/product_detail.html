@@ -32,14 +32,15 @@
     {% endif %}
     
     {% for review in reviews %}     
-    <p>{{ review.title }}</p>
+    <h4>{{ review.title }}</h4>
     <p>{{ review.review }}</p>
     <a href="{% url 'update_review' review.id %}">Update review</a>
     <a href="{% url 'delete_review' review.id %}">Delete review</a>
+    <br>
     {% endfor %}
     
     {% if request.user.is_authenticated %}
-    <br>
+    
     <h4>Write a review</h4>      
     <form method="POST" action="" class="contact">
         {% csrf_token %}

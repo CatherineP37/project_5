@@ -34,8 +34,8 @@
     {% for review in reviews %}     
     <h4>{{ review.title }}</h4>
     <p>{{ review.review }}</p>
-    <a href="{% url 'update_review' review.id %}">Update review</a>
-    <a href="{% url 'delete_review' review.id %}">Delete review</a>
+    <a href="{% url 'update_review' review.id %}" class="buttons">Update review</a>
+    <a href="{% url 'delete_review' review.id %}" class="buttons">Delete review</a>
     <br>
     {% endfor %}
     

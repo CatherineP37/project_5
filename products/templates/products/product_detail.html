@@ -39,6 +39,7 @@
     {% endfor %}
     
     {% if request.user.is_authenticated %}
+    <br>
     <h4>Write a review</h4>      
     <form method="POST" action="" class="contact">
         {% csrf_token %}

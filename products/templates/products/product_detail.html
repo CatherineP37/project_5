@@ -32,8 +32,8 @@
     {% endif %}
     
     {% for review in reviews %}     
-    <p>{{ reviews.title }}</p>
-    <p>{{ reviews.review }}</p>
+    <p>{{ review.title }}</p>
+    <p>{{ review.review }}</p>
     {% endfor %}
     
     {% if request.user.is_authenticated %}

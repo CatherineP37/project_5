@@ -6,7 +6,6 @@ from django.db.models.functions import Lower
 from .models import Product, Review
 from .forms import createReview
 
-
 # Create your views here.
 
 def products(request):
@@ -32,9 +31,6 @@ def products(request):
 
     return render(request, 'products/products.html', context)
 
-
-
-
 def product_detail(request, product_id):
     """ A view to show individual product details """
     print('product detail view')
@@ -51,8 +47,7 @@ def product_detail(request, product_id):
     context = {
         'product': product,
         'reviews': reviews,
-        'form' : form,
-        
+        'form' : form,       
              
     }
 
@@ -60,8 +55,6 @@ def product_detail(request, product_id):
 
     def __str__(self):
         return self.review.title
-
-
 
 def update_review(request, pk):
 

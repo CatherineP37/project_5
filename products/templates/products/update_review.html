@@ -2,12 +2,12 @@
 {% load static %}
 {% block content %}
 
-
 <h2>Update Review</h2>
 
-
-
-
-
+<form method="POST" action="" class="contact">
+    {% csrf_token %}
+    {{ form.as_p }}            
+    <input type="submit" name="save" class="buttons" aria-label="Update review" value="Update review">
+  </form>
 
 {% endblock %}

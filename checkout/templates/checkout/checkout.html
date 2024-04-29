@@ -3,41 +3,27 @@
 {% load bag_tools %}
 {% block content %}
 
-
-
-            <h2>Checkout</h2>
-        
-
-    
-            
-           
+            <h2>Checkout</h2>                          
                  
             <div class="order_summary">
             <p>Order Summary ({{ product_count }})</p>
-            {% for item in bag_items %}
-                
+            {% for item in bag_items %}                
                     
                         <a href="{% url 'product_detail' item.product.id %}">                            
                             <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">                     
-                        </a>
-                  
+                        </a>                  
                  
                         <p>{{ item.product.name }}</p>
                         
-                        <p>Quantity: {{ item.quantity }}</p>
-                 
+                        <p>Quantity: {{ item.quantity }}</p>                 
                 
-                        <p>${{ item.product.price | calc_subtotal:item.quantity }}</p>
-                  
+                        <p>${{ item.product.price | calc_subtotal:item.quantity }}</p>                  
                 
-            {% endfor %}
-        
-                                            
-              
+            {% endfor %}  
+                                         
                     <p>Total: ${{ total | floatformat:2 }}</p>
                     <p>Delivery cost: ${{ delivery | floatformat:2 }}</p>
-                    <p><strong>Grand total: ${{ grand_total | floatformat:2 }}</strong></p>
-        
+                    <p><strong>Grand total: ${{ grand_total | floatformat:2 }}</strong></p>        
    
             <p>Please fill out the form below to complete your order</p>
         </div>

@@ -27,10 +27,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 <!-- Stripe -->
-        <script src="https://js.stripe.com/v3/"></script>
- 
-
-    
+    <script src="https://js.stripe.com/v3/"></script>    
     
     <script src="https://kit.fontawesome.com/758be0af3f.js" crossorigin="anonymous"></script>
 
@@ -72,8 +69,7 @@
     {% endblock %}
 
     {% block extra_js %}
-    {% endblock %}
- 
+    {% endblock %} 
 
 </head>
 
@@ -136,12 +132,9 @@
       </nav> 
     </div>  
           
-    </header>                
-                
-
-    
-	
- <div class="offer">
+    </header>              
+              
+   	<div class="offer">
 	
  {% if messages %}
         <div class="message-container">
@@ -162,15 +155,12 @@
     {% endif %}
     
        <h3 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h3>   
-    </div>             
-   
-       
-       
-		 <main>
+    </div>    
+               
+		<main>
 		
             {% block content %} {% endblock content %}
-    </main>
-
+        </main>
     
     <!-- Footer  -->
 
@@ -238,8 +228,6 @@
 	</div>
     </footer>
     </div>
-
-
 
 {% block postloadjs %}
 <script type="text/javascript">

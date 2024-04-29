@@ -20,8 +20,7 @@
         <p>{{ product.ingredients }}</p>
         <h3>Nutritional Information</h3>
         <p>{{ product.nutrition }}</p>              
-    </div>
-    
+    </div>    
     
 </section> 
 <div class="reviews">
@@ -48,9 +47,7 @@
     {% else %} 
     <a href="{% url 'account_login' %}" class="buttons">Sign in to leave a review</a>
     {% endif %}
-</div>
-    
-                    
+</div>                
                     
 
                     <form action="{% url 'add_to_bag' product.id %}" method="POST" class="quantity">
@@ -97,17 +94,10 @@
                          
                         </div>
                     </form>
-                </div>
-            
+                </div>         
         
     
 {% endblock %}
-
-
-	
-	
-
-
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}

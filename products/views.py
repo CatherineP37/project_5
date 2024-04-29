@@ -44,7 +44,7 @@ def product_detail(request, product_id):
         if form.is_valid():
             form.save()
             messages.success(request, ('Thanks for your review!'))
-            return render(request, 'product_detail.html', {})  
+            return render(request, 'products/product_detail.html', {})  
     
     context = {
         'product': product,
@@ -55,8 +55,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
-    def __str__(self):
-        return self.review.title
+    
 
 def update_review(request, pk):
 

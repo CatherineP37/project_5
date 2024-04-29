@@ -6,7 +6,7 @@ from .models import Product, Review
 class createReview(forms.ModelForm):
     class Meta:
         model = Review
-        fields = "__all__"
+        exclude = ('product',)
         widgets={
             'title' : forms.TextInput(attrs={'style': "width:100%;"}),            
             'review' : forms.Textarea(attrs={'style': "width:100%;"}),

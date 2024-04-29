@@ -17,7 +17,7 @@ class AttendanceForm(ModelForm):
     class Meta:
         model = Attendance
         fields = "__all__"
-         widgets={
+        widgets={
             'name' : forms.TextInput(attrs={'style': "width:100%;"}),
             'email' : forms.TextInput(attrs={'style': "width:100%;"}),
             'event' : forms.Textarea(attrs={'style': "width:100%;"}),

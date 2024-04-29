@@ -34,17 +34,18 @@ def products(request):
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
-    print('product detail view')
-    reviews = Review.objects.all()    
+    
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.filter(product=product)  
     form = createReview()
 
     if request.method == 'POST':
         form = createReview(request.POST)
         if form.is_valid():
+            form.instance.product = product
             form.save()
             messages.success(request, ('Thanks for your review!'))
-            return render(request, 'products/product_detail.html', {})  
+            return redirect('product_detail', product_id=product_id)  
     
     context = {
         'product': product,

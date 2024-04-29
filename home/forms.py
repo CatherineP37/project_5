@@ -8,7 +8,9 @@ class ContactForm(ModelForm):
         model = Contact
         fields = "__all__"
         widgets={
-            'message' : forms.Textarea(attrs={'style': "width:100%;"})
+            'name' : forms.TextInput(attrs={'style': "width:100%;"}),
+            'email' : forms.TextInput(attrs={'style': "width:100%;"}),
+            'message' : forms.Textarea(attrs={'style': "width:100%;"}),
         }
 
 class AttendanceForm(ModelForm):

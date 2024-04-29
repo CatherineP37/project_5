@@ -36,7 +36,7 @@ def product_detail(request, product_id):
     print('product detail view')
     reviews = Review.objects.all()    
     product = get_object_or_404(Product, pk=product_id)
-    form : createReview()
+    form = createReview()
 
     if request.method == 'POST':
         form = createReview(request.POST)

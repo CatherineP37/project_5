@@ -34,19 +34,7 @@
     {% for review in reviews %}     
     <h4>{{ review.title }}</h4>
     <p>{{ review.review }}</p>
-    
-    <br>
-    {% endfor %}
-    
-    {% if request.user.is_authenticated %}
-    
-    <h4>Write a review</h4>      
-    <form method="POST" action="" class="contact">
-        {% csrf_token %}
-        {{ form.as_p }}            
-        <input type="submit" name="save" class="buttons" aria-label="Post review" value="Post review">
-      </form>
-      <div>
+    <div>
         {% if reviews %}
            {% for review in reviews %}
               {% if request.user == review.author %}
@@ -62,6 +50,19 @@
             <p>You have no reviews yet.</p>
        
         </div>
+    
+    <br>
+    {% endfor %}
+    
+    {% if request.user.is_authenticated %}
+    
+    <h4>Write a review</h4>      
+    <form method="POST" action="" class="contact">
+        {% csrf_token %}
+        {{ form.as_p }}            
+        <input type="submit" name="save" class="buttons" aria-label="Post review" value="Post review">
+      </form>
+      
         {% endif %}
       </div>
       

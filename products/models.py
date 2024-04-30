@@ -15,7 +15,9 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-class Review(models.Model): 
+class Review(models.Model):
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, default="admin") 
     title = models.TextField(max_length=300)
     review = models.TextField(max_length=300)
     product = models.ForeignKey(Product, on_delete=models.SET_NULL,

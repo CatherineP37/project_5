@@ -6,7 +6,7 @@ from .models import Event
 
 def index(request):
     """ A view to return the index page """
-
+    messages.success(request, ('Your review has been deleted.'))
     return render(request, 'home/index.html')
 
 

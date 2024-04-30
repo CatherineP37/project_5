@@ -4,7 +4,11 @@
 
 
 <section class="about">
-   
+       {% if messages %}
+       {% for message in messages %}
+           {{ message }}
+       {% endfor %}
+   {% endif %}
        <h1>Luxury handmade chocolates</h1>
        <a href="{% url 'products' %}" class="buttons">Check out our chocolate bars</a>            
        

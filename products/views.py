@@ -41,7 +41,7 @@ def product_detail(request, product_id):
 
     if request.method == 'POST':
         form = createReview(request.POST)
-        reviews = Review.objects.filter.all()
+        reviews = Review.objects.all()
   
         if form.is_valid():
             form.instance.product = product

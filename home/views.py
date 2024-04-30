@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import ContactForm, AttendanceForm
 from .models import Event
+from django.contrib import messages
 
 # Create your views here.
 

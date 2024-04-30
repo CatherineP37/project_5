@@ -35,6 +35,7 @@
     <h4>{{ review.title }}</h4>
     <p>{{ review.review }}</p>
     <div>
+        {% if request.user.is_authenticated %}
         {% if reviews %}
            {% for review in reviews %}
               {% if request.user == review.author %}
@@ -52,7 +53,9 @@
         </div>
     
     <br>
+    {% endif %}
     {% endfor %}
+
     
     {% if request.user.is_authenticated %}
     

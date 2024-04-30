@@ -82,7 +82,7 @@ def delete_review(request, pk):
     if request.method == "POST":
         review.delete()
         return redirect('/')
-    context = {'review':review}
+    context = {'item':review}
 
     return render(request, 'products/delete_review.html', context)
 

@@ -83,7 +83,7 @@ def delete_review(request, pk):
         review.delete()
         return redirect('/')
     
-    return render(request, 'products/delete_review.html',)
+    return render(request, 'products/delete_review.html')
 
    
 

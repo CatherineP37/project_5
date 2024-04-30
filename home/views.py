@@ -1,13 +1,12 @@
 from django.shortcuts import render
 from .forms import ContactForm, AttendanceForm
 from .models import Event
-from django.contrib import messages
 
 # Create your views here.
 
 def index(request):
     """ A view to return the index page """
-    messages.success(request, ('Your review has been deleted.'))
+   
     return render(request, 'home/index.html')
 
 

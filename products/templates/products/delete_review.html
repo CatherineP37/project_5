@@ -2,15 +2,15 @@
 {% load static %}
 {% block content %}
 
-<p>Are you sure you want to delete your review "{{item}}"?</p>
+<p>Are you sure you want to delete your review?</p>
 
 <form method="POST" action="{% url 'delete_review' item.id %}">
 
     {% csrf_token %}
     {{ form.as_p }} 
 
-    <a href="{% url 'index' %}">Cancel</a>
-    <input type="submit" name="Confirm">
+    <a href="{% url 'index' %}" class="buttons">Cancel</a>
+    <input type="submit" name="Confirm" class="button">
 
 </form>
 

@@ -34,8 +34,7 @@
     {% for review in reviews %}     
     <h4>{{ review.title }}</h4>
     <p>{{ review.review }}</p>
-    <a href="{% url 'update_review' review.id %}" class="buttons">Update review</a>
-    <a href="{% url 'delete_review' review.id %}" class="buttons">Delete review</a>
+    
     <br>
     {% endfor %}
     
@@ -47,6 +46,24 @@
         {{ form.as_p }}            
         <input type="submit" name="save" class="buttons" aria-label="Post review" value="Post review">
       </form>
+      <div>
+        {% if reviews %}
+           {% for review in reviews %}
+              {% if request.user == review.author %}
+
+                <a href="{% url 'update_review' review.id %}" class="buttons">Update review</a>
+                <a href="{% url 'delete_review' review.id %}" class="buttons">Delete review</a>
+                
+              {% else %}
+              {% endif %}
+           {% endfor %}
+
+        {% else %}
+            <p>You have no reviews yet.</p>
+       
+        </div>
+        {% endif %}
+      </div>
       
          
     {% else %} 

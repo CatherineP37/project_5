@@ -250,6 +250,10 @@ form input {
 	margin: 0 auto;
 }
 
+form textarea {
+	padding: 1%;
+}
+
 .quantity {
 	background-color: #dfc9a6;
 	width: 90%;

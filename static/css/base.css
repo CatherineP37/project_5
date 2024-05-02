@@ -249,6 +249,10 @@ form input {
 	margin: 0 auto;
 }
 
+input #id_title {
+	margin: 0;
+}
+
 form textarea {
 	padding: 1%;
 }

@@ -36,10 +36,8 @@
     <p>{{ review.review }}</p>
 
     {% if user.is_authenticated and review.author == user %}
-    <button class="buttons"
-      review_id="{{ review.id }}">Delete</button>
-    <button class="buttons"
-      review_id="{{ review.id }}">Edit</button>
+    <a href="{% url 'update_review' review.id %}" class="buttons">Update review</a>
+    <a href="{% url 'delete_review' review.id %}" class="buttons">Delete review</a>    
     {% endif %}
 
     {% endfor %}
@@ -52,7 +50,7 @@
     
     {% if request.user.is_authenticated %}
     
-    <h4>Write a review</h4>      
+    <h3>Write a review</h3>      
     <form method="POST" action="" class="contact">
         {% csrf_token %}
         {{ form.as_p }}            

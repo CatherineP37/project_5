@@ -34,28 +34,20 @@
     {% for review in reviews %}     
     <h4>{{ review.title }}</h4>
     <p>{{ review.review }}</p>
+
+    {% if user.is_authenticated and review.author == user %}
+    <button class="buttons"
+      review_id="{{ review.id }}">Delete</button>
+    <button class="buttons"
+      review_id="{{ review.id }}">Edit</button>
+    {% endif %}
+
     {% endfor %}
 
-    <div>
-       
-        {% if reviews %}
-           {% for review in reviews %}
-              {% if request.user == review.author %}
-
-                <a href="{% url 'update_review' review.id %}" class="buttons">Update review</a>
-                <a href="{% url 'delete_review' review.id %}" class="buttons">Delete review</a>
-                
-              {% else %}
-              {% endif %}
+    <div>   
               
-           {% endfor %}
-
-        {% else %}
-            <p>You have no reviews yet.</p>
-       
-        </div>    
-    <br>
-    {% endif %}
+                
+              
     
 
     

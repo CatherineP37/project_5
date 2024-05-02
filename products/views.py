@@ -66,7 +66,7 @@ def update_review(request, review_id):
 
         queryset = Review.objects.filter(status=1)
         product = get_object_or_404(queryset,)
-        review = get_object_or_404(Comment, pk=review_id)
+        review = get_object_or_404(Review, pk=review_id)
         review_form = createReview(data=request.POST, instance=review)
 
         if review_form.is_valid() and review.author == request.user:

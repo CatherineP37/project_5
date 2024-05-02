@@ -19,9 +19,11 @@ class Review(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, default="admin") 
     title = models.TextField(max_length=300)
-    review = models.TextField(max_length=300)
+    review = models.TextField()
     product = models.ForeignKey(Product, on_delete=models.SET_NULL,
                                 null=True, blank=True,)
+
+
 
  
 

@@ -59,26 +59,29 @@ def product_detail(request, product_id):
              
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, 'products/product_detail.html', context)   
 
-    
+def update_review(request, pk, review_id):
+    """
+    view to edit review
+    """
+    if request.method == "POST":
 
-def update_review(request, pk):
+        queryset = Review.objects.filter(status=1)
+        product = get_object_or_404(queryset,)
+        review = get_object_or_404(Comment, pk=comment_id)
+        review_form = createReview(data=request.POST, instance=review)
 
-    review = Review.objects.get(id=pk)
-    form = createReview(instance=review)
+        if review_form.is_valid() and review.author == request.user:
+            review = review_form.save(commit=False)
+            review.post = post
+            review.approved = False
+            review.save()
+            messages.add_message(request, messages.SUCCESS, 'Review updated!')
+        else:
+            messages.add_message(request, messages.ERROR, 'Error updating review.')
 
-    if request.method == 'POST':
-        form = createReview(request.POST, instance=review)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-               
-
-    context = {'form':form}
-    return render(request, 'products/update_review.html', context)
-    def __str__(self):
-        return self.name
+    return HttpResponseRedirect(reverse('update_review',))
 
 def delete_review(request, pk):
     review = Review.objects.get(id=pk)

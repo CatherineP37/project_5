@@ -64,13 +64,13 @@ def update_review(request, review_id):
     """
     if request.method == "POST":
 
-        queryset = Review.objects.filter(status=1)
+        queryset = Product.objects.filter(status=1)
         product = get_object_or_404(queryset,)
         review = get_object_or_404(Review, pk=review_id)
-        review_form = createReview(data=request.POST, instance=review)
+        form = createReview(data=request.POST, instance=review)
 
-        if review_form.is_valid() and review.author == request.user:
-            review = review_form.save(commit=False)
+        if form.is_valid() and review.author == request.user:
+            review = form.save(commit=False)
             review.product = product
             review.approved = False
             review.save()

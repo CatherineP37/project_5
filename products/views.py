@@ -58,7 +58,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)   
 
-def update_review(request, pk, review_id):
+def update_review(request, review_id):
     """
     view to edit review
     """
@@ -80,7 +80,7 @@ def update_review(request, pk, review_id):
 
     return HttpResponseRedirect(reverse('products/update_review.html',))
 
-def delete_review(request, review_id, pk):
+def delete_review(request, review_id):
     """
     view to delete review
     """

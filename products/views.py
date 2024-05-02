@@ -7,9 +7,6 @@ from django.http import HttpResponseRedirect
 from .models import Product, Review
 from .forms import createReview
 
-
-
-
 # Create your views here.
 
 def products(request):

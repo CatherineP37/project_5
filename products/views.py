@@ -66,7 +66,7 @@ def update_review(request, pk, review_id):
 
         queryset = Review.objects.filter(status=1)
         product = get_object_or_404(queryset,)
-        review = get_object_or_404(Comment, pk=comment_id)
+        review = get_object_or_404(Comment, pk=review_id)
         review_form = createReview(data=request.POST, instance=review)
 
         if review_form.is_valid() and review.author == request.user:
@@ -78,7 +78,7 @@ def update_review(request, pk, review_id):
         else:
             messages.add_message(request, messages.ERROR, 'Error updating review.')
 
-    return HttpResponseRedirect(reverse('update_review',))
+    return HttpResponseRedirect(reverse('products/update_review.html',))
 
 def delete_review(request, review_id, pk):
     """

@@ -58,21 +58,18 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)   
 
-def update_review(request, review_id):
+def update_review(request, pk):
     """
     view to edit review
     """
     if request.method == "POST":
 
-        queryset = Product.objects.filter(status=1)
-        product = get_object_or_404(queryset,)
-        review = get_object_or_404(Review, pk=review_id)
-        form = createReview(data=request.POST, instance=review)
+        review = Review.objects.get(id=pk)
+        form = createReview(instance=review)       
 
         if form.is_valid() and review.author == request.user:
             review = form.save(commit=False)
-            review.product = product
-            review.approved = False
+            review.product = product            
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review updated!')
         else:

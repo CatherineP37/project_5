@@ -51,11 +51,11 @@ Here is a picture of the GitHub project board for this project:
 
 Epic - Navigation
 
-- As a shopper I want to view a list of products so that I can choose a product.
+- As a site user I want to view a list of products so that I can choose a product.
 
-- As a shopper I want to view product details easily so that I can know enough information to make a choice.
+- As a site user I want to view product details easily so that I can know enough information to make a choice.
 
-- As a shopper I want to easily view the total cost of my purchases so that I can avoid spending too much money.
+- As a site user I want to easily view the total cost of my purchases so that I can avoid spending too much money.
   
 Epic - User accounts
 
@@ -71,23 +71,49 @@ Epic - User accounts
 
 Epic - Shopping bag
 
-- As a shopper I can easily select the quantity of a product in my shopping bag.
+- As a site user I can easily select the quantity of a product in my shopping bag.
 
-- As a shopper I can easily view items in my shopping bag.
+- As a site user I can easily view items in my shopping bag.
 
 Epic - Checkout
 
-- As a shopper I can easily enter my payment details so that I can make a purchase.
+- As a site user I can easily enter my payment details so that I can make a purchase.
 
-- As a shopper I can view an order confirmation after making an order.
+- As a site user I can view an order confirmation after making an order.
 
-- As a shopper I get an email confirmation after making an order.
+- As a site user I get an email confirmation after making an order.
 
 Epic - Store management
 
 - As a store owner I can easily add new items to my store.
 
 - As a store owner I can delete products from my store.
+
+Epic - Events
+
+- As a site user I can see a list of events.
+
+- As a site user I can easily put my name down for events.
+
+Epic - Contact
+
+- As a site user I can contact the business easily.
+
+Epic - Reviews
+
+- As a site user I can read reviews about a product so that I can get more information about the product.
+
+- As a site user I can write a review about a product.
+
+Epic - Products
+
+- As a site user I can easily see what products are for sale.
+
+- As a site user I can see a picture of the product so that I know what it looks like.
+
+- As a site user I can read a description of a product so that I can learn more about the product before deciding to buy or not.
+
+
 
 ## Wireframes
 

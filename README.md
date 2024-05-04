@@ -51,7 +51,7 @@ Here is a picture of the GitHub project board for this project:
 
 Epic - Navigation
 
-- As a site user I want to view a list of products so that I can choose a product.
+- As a site user I want to view the products so that I can choose a product.
 
 - As a site user I want to view product details easily so that I can know enough information to make a choice.
 

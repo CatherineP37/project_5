@@ -99,12 +99,6 @@ Epic - Contact
 
 - As a site user I can contact the business easily.
 
-Epic - Reviews
-
-- As a site user I can read reviews about a product so that I can get more information about the product.
-
-- As a site user I can write a review about a product.
-
 Epic - Products
 
 - As a site user I can easily see what products are for sale.
@@ -113,7 +107,11 @@ Epic - Products
 
 - As a site user I can read a description of a product so that I can learn more about the product before deciding to buy or not.
 
+Epic - Reviews
 
+- As a site user I can read reviews about a product so that I can get more information about the product.
+
+- As a site user I can write a review about a product.
 
 ## Wireframes
 

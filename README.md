@@ -99,6 +99,8 @@ Epic - Contact
 
 - As a site user I can contact the business easily.
 
+- As a store owner I can receive messages from customers.
+
 Epic - Products
 
 - As a site user I can easily see what products are for sale.

@@ -69,7 +69,8 @@ def update_review(request, pk):
 
         if form.is_valid() and review.author == request.user:
             review = form.save(commit=False)
-            review.product = product            
+            review.product = product 
+            review.author = user           
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review updated!')
         else:

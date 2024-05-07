@@ -45,6 +45,9 @@ def product_detail(request, product_id):
   
         if form.is_valid():
             form.instance.product = product
+            form.instance.author = request.user
+            form.author = user
+            
             form.save()
             messages.success(request, ('Thanks for your review!'))
             return redirect('product_detail', product_id=product_id)  
@@ -69,8 +72,8 @@ def update_review(request, pk):
 
         if form.is_valid() and review.author == request.user:
             review = form.save(commit=False)
-            review.product = product 
-            review.author = user           
+            review.product = product             
+            review.author = request.user          
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review updated!')
         else:

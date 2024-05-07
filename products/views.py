@@ -45,8 +45,7 @@ def product_detail(request, product_id):
   
         if form.is_valid():
             form.instance.product = product
-            form.instance.author = request.user
-            form.author = user
+            form.instance.author = request.user           
             
             form.save()
             messages.success(request, ('Thanks for your review!'))

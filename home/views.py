@@ -32,6 +32,7 @@ def events(request):
 	    form = AttendanceForm(request.POST)
 	    if form.is_valid():
 		    form.save()
+            form = AttendanceForm()
 			
     context = {'form':form,
                'events':events,

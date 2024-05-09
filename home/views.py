@@ -10,11 +10,11 @@ def index(request):
 
 def contact(request):
 
-	form = ContactForm()
+    form = ContactForm()
 
-	if request.method == 'POST':
-		form = ContactForm(request.POST)
-		if form.is_valid():
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
         form.save()
         form = ContactForm()
 			

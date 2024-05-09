@@ -18,7 +18,7 @@ def contact(request):
             form.save()
             form = ContactForm()
 			
-	context = {'form':form}
+    context = {'form':form}
     
 	return render(request, 'home/contact.html', context)
 

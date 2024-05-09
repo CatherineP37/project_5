@@ -1,8 +1,6 @@
 from django.shortcuts import (render, redirect, HttpResponse, get_object_or_404)
 from .forms import ContactForm, AttendanceForm
-from .models import Event
-
-# Create your views here.
+from .models import Eventreate your views here.
 
 def index(request):
     """ A view to return the index page """

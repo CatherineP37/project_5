@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import (render, redirect, HttpResponse, get_object_or_404)
 from .forms import ContactForm, AttendanceForm
 from .models import Event
 
@@ -18,8 +18,10 @@ def contact(request):
 		form = ContactForm(request.POST)
 		if form.is_valid():
 			form.save()
+
 			
 	context = {'form':form}
+    
 	return render(request, 'home/contact.html', context)
 
 

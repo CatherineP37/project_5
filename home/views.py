@@ -20,7 +20,7 @@ def contact(request):
 			
     context = {'form':form}
     
-	return render(request, 'home/contact.html', context)
+    return render(request, 'home/contact.html', context)
 
 
 def events(request):

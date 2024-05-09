@@ -30,16 +30,15 @@ def events(request):
 
     if request.method == 'POST':
 	    form = AttendanceForm(request.POST)
-	    if form.is_valid():
-		    form.save()
+        if form.is_valid():
+            form.save()
             form = AttendanceForm()
-			
+                                          	
     context = {'form':form,
-               'events':events,
-              }
+                'events':events,
+            }
+                       
     return render(request, 'home/events.html', context)
-
-
 
 def about(request):
     """ A view to return the about page """

@@ -2,9 +2,10 @@ from django.shortcuts import (render, redirect, HttpResponse, get_object_or_404)
 from .forms import ContactForm, AttendanceForm
 from .models import Event, Contact
 
+
 def index(request):
     """ A view to return the index page """
-   
+
     return render(request, 'home/index.html')
 
 
@@ -17,9 +18,9 @@ def contact(request):
         if form.is_valid():
             form.save()
             form = ContactForm()
-			
+
     context = {'form':form}
-    
+
     return render(request, 'home/contact.html', context)
 
 
@@ -29,11 +30,11 @@ def events(request):
     form = AttendanceForm()
 
     if request.method == 'POST':
-	    form = AttendanceForm(request.POST)
+        form = AttendanceForm(request.POST)
         if form.is_valid():
             form.save()
             form = AttendanceForm()
-                                          	
+
     context = {'form':form,
                 'events':events,
             }

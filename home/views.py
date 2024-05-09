@@ -15,8 +15,8 @@ def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-        form.save()
-        form = ContactForm()
+            form.save()
+            form = ContactForm()
 			
 	context = {'form':form}
     

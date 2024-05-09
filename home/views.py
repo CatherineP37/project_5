@@ -1,6 +1,6 @@
 from django.shortcuts import (render, redirect, HttpResponse, get_object_or_404)
 from .forms import ContactForm, AttendanceForm
-from .models import Eventreate your views here.
+from .models import Event, Contact
 
 def index(request):
     """ A view to return the index page """
@@ -15,8 +15,8 @@ def contact(request):
 	if request.method == 'POST':
 		form = ContactForm(request.POST)
 		if form.is_valid():
-			form.save()
-            form = ContactForm()
+        form.save()
+        form = ContactForm()
 			
 	context = {'form':form}
     

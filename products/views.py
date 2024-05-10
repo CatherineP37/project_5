@@ -80,12 +80,12 @@ def update_review(request, pk):
 
     return HttpResponseRedirect(reverse('products/update_review.html',))
 
-def delete_review(request, review_id):
+def delete_review(request, pk):
     """
     view to delete review
     """
     product = get_object_or_404
-    review = get_object_or_404(Review, pk=review_id)
+    review = Review.objects.get(id=pk)
 
     if review.author == request.user:
         review.delete()

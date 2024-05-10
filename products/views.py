@@ -80,7 +80,7 @@ def update_review(request, pk):
 
     return HttpResponseRedirect(reverse('products/update_review.html',))
 
-def delete_review(request, pk):
+def delete_review(request, review_id):
     """
     view to delete review
     """

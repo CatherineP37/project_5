@@ -84,16 +84,17 @@ def delete_review(request, pk):
     """
     view to delete review
     """
-    product = get_object_or_404
-    review = Review.objects.get(id=pk)
+    if request.method == "POST":
+        product = get_object_or_404
+        review = Review.objects.get(id=pk)
 
-    if review.author == request.user:
-        review.delete()
-        messages.add_message(request, messages.SUCCESS, 'Review deleted!')
-    else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own reviews.')
+        if review.author == request.user:
+            review.delete()
+            messages.add_message(request, messages.SUCCESS, 'Review deleted!')
+        else:
+            messages.add_message(request, messages.ERROR, 'You can only delete your own reviews.')
 
-    return HttpResponseRedirect(reverse('products/delete_review.html',))
+        return HttpResponseRedirect(reverse('products/delete_review.html',))
 
 
    

@@ -65,13 +65,11 @@ Epic - User accounts
 
 - As a site user I can easily login to my account if I forget my password.
 
-- As a site user I can receive an email confirmation after making an account.
-
 - As a site user I can have my own user profile so that I can view my order history and save my payment information.
 
 Epic - Shopping bag
 
-- As a site user I can easily select the quantity of a product in my shopping bag.
+- As a site user I can easily change the quantity of a product in my shopping bag.
 
 - As a site user I can easily view items in my shopping bag.
 

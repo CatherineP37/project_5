@@ -78,7 +78,7 @@ def update_review(request, pk):
         else:
             messages.add_message(request, messages.ERROR, 'Error updating review.')
 
-    return HttpResponseRedirect(reverse('products/update_review.html',))
+    return HttpResponseRedirect(reverse('update_review'))
 
 def delete_review(request, pk):
     """

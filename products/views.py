@@ -78,13 +78,7 @@ def update_review(request, pk):
         else:
             messages.add_message(request, messages.ERROR, 'Error updating review.') 
 
-        return redirect('/')
-               
-
-        context = {'form':form}
-        return render(request, 'products/update_review.html', context)
-        def __str__(self):
-            return self.name
+        return HttpResponseRedirect(reverse('update_review'))
 
 def delete_review(request, pk):
     """

@@ -76,9 +76,15 @@ def update_review(request, pk):
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating review.')
+            messages.add_message(request, messages.ERROR, 'Error updating review.') 
 
-    return HttpResponseRedirect(reverse('update_review'))
+        return redirect('/')
+               
+
+        context = {'form':form}
+        return render(request, 'products/update_review.html', context)
+        def __str__(self):
+            return self.name
 
 def delete_review(request, pk):
     """

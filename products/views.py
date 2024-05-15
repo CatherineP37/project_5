@@ -80,8 +80,8 @@ def update_review(request, review_id):
             messages.add_message(request, messages.ERROR, 'Error updating review.')
             return redirect('update_review',) 
             
-            context = {'form':form}
-            return render(request, 'products/update_review.html', context) 
+    context = {'form':form}
+    return render(request, 'products/update_review.html', context) 
 
         
 

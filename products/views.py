@@ -101,8 +101,7 @@ def delete_review(request, review_id):
             messages.add_message(request, messages.SUCCESS, 'Review deleted!')
         else:
             messages.add_message(request, messages.ERROR, 'You can only delete your own reviews.')
-
-    context = {'form':form}
+    
     return render(request, 'products/delete_review.html', context)
 
 

@@ -78,7 +78,7 @@ def update_review(request, pk):
         else:
             messages.add_message(request, messages.ERROR, 'Error updating review.')
 
-            return render(request, 'products/update_review.html', context) 
+        return render(request, 'products/update_review.html', context) 
 
         
 

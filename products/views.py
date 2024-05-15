@@ -64,7 +64,7 @@ def update_review(request, pk):
     """
     view to edit review
     """
-    review = Review.objects.get(id=pk)
+    review = Review.objects.get(pk=review_id)
     form = createReview(instance=review) 
 
     if request.method == "POST":

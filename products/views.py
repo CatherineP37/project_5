@@ -66,9 +66,11 @@ def update_review(request, review_id):
     """
     review = get_object_or_404(Review, pk=review_id)
     form = createReview(instance=review)
+    product = review.product
+    
 
     if request.method == "POST":
-        form = createReview(request.POST, instance=review)             
+        form = createReview(request.POST, instance=review)            
 
         if form.is_valid() and review.author == request.user:
             review = form.save(commit=False)
@@ -76,7 +78,7 @@ def update_review(request, review_id):
             review.author = request.user          
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review updated!')
-            return redirect('product_detail', product_id=product_id) 
+            return redirect('product_detail', product_id=product.id) 
         else:
             messages.add_message(request, messages.ERROR, 'Error updating review.')
             return redirect('update_review',) 

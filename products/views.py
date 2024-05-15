@@ -88,13 +88,13 @@ def update_review(request, review_id):
 
         
 
-def delete_review(request, pk):
+def delete_review(request, review_id):
     """
     view to delete review
     """
     if request.method == "POST":
-        product = get_object_or_404
-        review = Review.objects.get(id=pk)
+        product = review.product        
+        review = get_object_or_404(Review, pk=review_id)
 
         if review.author == request.user:
             review.delete()

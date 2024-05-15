@@ -81,7 +81,7 @@ def update_review(request, pk):
             return redirect('update_review',) 
             
             context = {'form':form}
-            return render(request, 'products/update_review.html', context) 
+            return render(request, 'products/update_review.html', context (request)) 
 
         
 

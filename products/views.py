@@ -64,10 +64,11 @@ def update_review(request, pk):
     """
     view to edit review
     """
-    if request.method == "POST":
+    review = Review.objects.get(id=pk)
+    form = createReview(instance=review) 
 
-        review = Review.objects.get(id=pk)
-        form = createReview(instance=review)       
+    if request.method == "POST":
+        form = createReview(request.POST, instance=review)             
 
         if form.is_valid() and review.author == request.user:
             review = form.save(commit=False)
@@ -78,8 +79,9 @@ def update_review(request, pk):
         else:
             messages.add_message(request, messages.ERROR, 'Error updating review.')
             return redirect('update_review',) 
-
-        return render(request, 'products/update_review.html', context) 
+            
+            context = {'form':form}
+            return render(request, 'products/update_review.html', context) 
 
         
 

@@ -76,6 +76,7 @@ def update_review(request, review_id):
             review.author = request.user          
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review updated!')
+            return redirect('product_detail', product_id=product_id) 
         else:
             messages.add_message(request, messages.ERROR, 'Error updating review.')
             return redirect('update_review',) 

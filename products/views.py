@@ -60,12 +60,13 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)   
 
-def update_review(request, review_id):
+def update_review(request,product_id, review_id):
     """
     view to edit review
     """
     review = get_object_or_404(Review, pk=review_id)
-    form = createReview(instance=review) 
+    form = createReview(instance=review)
+    product = get_object_or_404(Product, pk=product_id)
 
     if request.method == "POST":
         form = createReview(request.POST, instance=review)             

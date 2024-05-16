@@ -98,8 +98,7 @@ def delete_review(request, review_id):
             review.delete()
             messages.add_message(request, messages.SUCCESS, 'Review deleted!')
             return redirect('product_detail', product_id=product.id)
-            print(" my id is: ", review.id )
-             
+                       
         else:
             messages.add_message(request, messages.ERROR, 'You can only delete your own reviews.')
     

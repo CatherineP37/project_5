@@ -84,8 +84,7 @@ def update_review(request, review_id):
             return redirect('update_review',) 
             
     context = {'form':form}
-    return render(request, 'products/update_review.html', context) 
-
+    return render(request, 'products/update_review.html', context)
         
 
 def delete_review(request, review_id):

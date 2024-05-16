@@ -93,7 +93,7 @@ def delete_review(request, review_id):
     view to delete review
     """
     if request.method == "POST":
-        product = review.product        
+        product = get_object_or_404()       
         review = get_object_or_404(Review, pk=review_id)
 
         if review.author == request.user:

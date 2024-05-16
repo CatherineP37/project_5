@@ -105,16 +105,3 @@ def delete_review(request, review_id):
             messages.add_message(request, messages.ERROR, 'You can only delete your own reviews.')
     
     return render(request, 'products/delete_review.html',)
-
-
-
-   
-
-
-
-
-
-
-
-        
-       

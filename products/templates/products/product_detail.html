@@ -37,7 +37,8 @@
    
     {% if user.is_authenticated and review.author == user %}
     <a href="{% url 'update_review' review.id %}" class="buttons">Update review</a>
-    <a href="{% url 'delete_review' review.id %}" class="buttons">Delete review</a>    
+    <a href="{% url 'delete_review' review.id %}" class="buttons">Delete review</a> 
+    <span>{{ item.id }}</span>
     {% endif %}
 
     {% endfor %}

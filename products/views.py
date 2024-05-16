@@ -103,7 +103,7 @@ def delete_review(request, review_id):
         else:
             messages.add_message(request, messages.ERROR, 'You can only delete your own reviews.')
     
-    return HttpResponseRedirect(reverse('product_detail',))
+    return render(request, 'products/update_review.html', context)
 
 
    

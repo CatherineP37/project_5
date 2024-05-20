@@ -90,8 +90,9 @@ def delete_review(request, review_id):
     """
     view to delete review
     """
-    product = review.product
-    if request.method == "POST":        
+    
+    if request.method == "POST":
+        product = review.product     
               
         if review.author == request.user:
             review.delete()

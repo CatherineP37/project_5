@@ -90,9 +90,11 @@ def delete_review(request, review_id):
     """
     view to delete review
     """
-    
-    if request.method == "POST":
-        product = review.product     
+    review = get_object_or_404(Review, pk=review_id)
+    context= {'review':review}
+    product = review.product
+   
+    if request.method == "POST":                     
               
         if review.author == request.user:
             review.delete()
@@ -101,8 +103,6 @@ def delete_review(request, review_id):
                        
         else:
             messages.add_message(request, messages.ERROR, 'You can only delete your own reviews.')
-
-            
-    review = get_object_or_404(Review, pk=review_id)
-    context= {'review':review}  
+           
+    
     return render(request, 'products/delete_review.html', context)

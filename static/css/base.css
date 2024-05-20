@@ -135,7 +135,7 @@ header {
 
 .bar {
 	display: block;
-	width: 10%;
+	width: 40%;
 	margin: 20px auto 0 auto;	
 }
 
@@ -427,9 +427,8 @@ textarea {
 
 /* Main */
 
-.main-picture {    
-    height: 100vh;
-    width: 100%;   
+.bar {	
+	width: 30%;		
 }
 
 .collection {
@@ -487,6 +486,12 @@ textarea {
 		padding: 2% 30%;
 	}
 
+/* Main */
+
+.bar {	
+	width: 20%;		
+}
+
 /* Footer */
 
 	.info {
@@ -510,6 +515,9 @@ textarea {
 
 /* Main */
 
+    .bar {	
+	    width: 15%;		
+    }
 	.search {	
 		width: 30%;	
 	}
@@ -521,6 +529,10 @@ textarea {
 	.collection {
 		width: 80%;
 	}
+
+	.buttons {	
+		width: 30%;
+     }
 	
 }
 

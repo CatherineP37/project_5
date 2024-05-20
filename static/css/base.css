@@ -492,6 +492,10 @@ textarea {
 	width: 20%;		
 }
 
+.about {	
+	width: 70%;	
+}
+
 /* Footer */
 
 	.info {
@@ -533,6 +537,10 @@ textarea {
 	.buttons {	
 		width: 30%;
      }
+
+	 .about {
+		width: 60%;
+	 }
 	
 }
 

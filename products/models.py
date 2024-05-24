@@ -2,8 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
-class Product(models.Model):  
-    sku = models.CharField(max_length=254, null=True, blank=True)
+class Product(models.Model):    
     name = models.CharField(max_length=254)
     description = models.TextField()
     ingredients = models.TextField()

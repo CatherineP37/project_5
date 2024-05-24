@@ -1,6 +1,7 @@
 from django.shortcuts import (render, redirect, HttpResponse, get_object_or_404)
 from .forms import ContactForm, AttendanceForm
 from .models import Event, Contact
+from django.contrib import messages
 
 
 def index(request):
@@ -20,7 +21,8 @@ def contact(request):
             form = ContactForm()
 
     context = {'form':form}
-
+    
+    messages.success(request, ('Thanks! your message has been sent'))
     return render(request, 'home/contact.html', context)
 
 
@@ -38,7 +40,8 @@ def events(request):
     context = {'form':form,
                 'events':events,
             }
-                       
+
+    messages.success(request, ('Thanks for registering your interest for our event!'))                   
     return render(request, 'home/events.html', context)
 
 def about(request):

@@ -4,14 +4,11 @@ from .models import Product, Review
 # Register your models here.
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = (
-        'sku',
+    list_display = (        
         'name',        
         'price',        
         'image',
-    )
-
-    ordering = ('sku',)
+    )    
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (

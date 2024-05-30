@@ -11,6 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RemoveField(
-            model_name='product',            
+            model_name='product',
+            name='sku',
         ),
     ]

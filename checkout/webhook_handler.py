@@ -76,7 +76,7 @@ class StripeWH_Handler:
                 profile.default_country = shipping_details.address.country
                 profile.default_postcode = shipping_details.address.postal_code
                 profile.default_town_or_city = shipping_details.address.city
-                profile.default_street_address = shipping_details.address               
+                profile.default_street_address = shipping_details.address            
                 profile.default_county = shipping_details.address.state
                 profile.save()
 

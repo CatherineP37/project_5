@@ -3,6 +3,10 @@
 {% load bag_tools %}
 {% block content %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
             <h2>Checkout</h2>                          
                  
             <div class="order_summary">

@@ -19,10 +19,10 @@ def contact(request):
         if form.is_valid():
             form.save()
             form = ContactForm()
+            messages.success(request, ('Thanks! your message has been sent'))
 
-    context = {'form':form}
+    context = {'form':form}    
     
-    messages.success(request, ('Thanks! your message has been sent'))
     return render(request, 'home/contact.html', context)
 
 
@@ -36,12 +36,13 @@ def events(request):
         if form.is_valid():
             form.save()
             form = AttendanceForm()
+            messages.success(request, ('Thanks for registering your interest for our event!'))
 
     context = {'form':form,
                 'events':events,
             }
 
-    messages.success(request, ('Thanks for registering your interest for our event!'))                   
+                       
     return render(request, 'home/events.html', context)
 
 def about(request):

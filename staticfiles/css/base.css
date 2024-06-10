@@ -302,8 +302,7 @@ form input {
 
 .form-check-input {
 	position: absolute;
-	margin-top: .3rem;
-	margin-left: 2rem;
+	margin-top: .3rem;	
 }
 
 .login {

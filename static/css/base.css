@@ -298,7 +298,7 @@ form textarea {
 .form-check-input {
 	position: absolute;
 	margin-top: .3rem;
-	margin-left: 2rem;
+	margin-left: 0;
 }
 
 .login {

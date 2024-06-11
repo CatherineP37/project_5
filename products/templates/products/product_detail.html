@@ -47,7 +47,7 @@
         
     {% if request.user.is_authenticated %}
     
-    <h2>Write a review</h2>      
+    <h3>Write a review</h3>      
     <form method="POST" action="" class="contact">
         {% csrf_token %}
         {{ form.as_p }}            

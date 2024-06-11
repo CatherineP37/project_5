@@ -190,11 +190,111 @@ This is the Lighthouse test result:
 
 ### Manual Testing
 
-As I went through the project I manually tested each user story thoroughly. I tested the views, 
-the models, the booking form and the authentication. The user can create an account so that they
-can log in. They can log in with their details. They can view the appointments that they've
-already booked and they can update or delete the bookings. They can use the booking form to book
-an appointment and they can choose from a list of available appointments.
+LANDING PAGE
+
+Is the landing page displaying correctly?
+Yes.
+
+Do all the links on the landing page work?
+Yes.
+
+CREATING AN ACCOUNT
+
+Can the user create an account?
+Yes.
+
+Does the user get a confirmation email when they create an account?
+Yes.
+
+SIGNING IN AND OUT
+
+Can the user sign in and out easily?
+Yes.
+
+Is the CSS working properly?
+Yes.
+
+SUBSCRIBING TO THE NEWSLETTER
+
+Can the user subscribe to the email newsletter?
+Yes.
+
+Does the user receive a confirmation message after subscribing to the newsletter?
+Yes.
+
+MAKING AN ORDER
+
+Can the user easily navigate to the page where the chocolate bars are shown?
+Yes.
+
+Can the user select a product to add to their shopping bag?
+Yes.
+
+Can the user adjust the number of products in their shopping bag?
+Yes
+
+Can the user enter their delivery address and payment details to make a purchase?
+Yes.
+
+Does the user get an order confirmation once they have completed a purchase?
+Yes.
+
+Can the user empty their shopping bag?
+Yes.
+
+Can the user pay for their order?
+Yes.
+
+
+REVIEWS
+
+Can the user write and publish a product review?
+Yes.
+
+Can the user update their review?
+Yes.
+
+Is there a confirmation message after the user updates their review?
+Yes.
+
+Can the user delete their review?
+Yes.
+
+Is there a confirmation message after the user deletes their review?
+Yes.
+
+EVENTS
+
+Are upcoming events displayed on the events page?
+Yes.
+
+Can the user submit the attendance form?
+Yes.
+
+Does the user get a confirmation message after they submit the events form?
+Yes.
+
+Does the form inform the user about errors in the form?
+Yes.
+
+
+CONTACT
+
+Can the user submit the contact form?
+Yes.
+
+Does the user get a confirmation message after they send their message?
+Yes.
+
+Does the form inform the user about errors in the form?
+Yes.
+
+
+NAVIGATION
+
+Are the links on the site working properly?
+Yes.
+
 
 ## Deployment
 

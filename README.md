@@ -165,9 +165,7 @@ The project passed the W3C HTML test.
 
 ### W3C CSS Test
 
-The project passed the W3C CSS test.
-
-![W3C CSS Test](images/CSS.png)
+The project passed the W3C CSS Validation Service.
 
 ### JSHint Test 
 

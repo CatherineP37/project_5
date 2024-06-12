@@ -169,7 +169,7 @@ The project passed the W3C CSS Validation Service.
 
 ### JSHint Test 
 
-The JavaScript was tested with JSHint and no problems were found.
+The JavaScript was tested with JSHint and no major issues were found.
 
 ### CI Python Linter Test
 

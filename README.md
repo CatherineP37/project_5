@@ -131,19 +131,19 @@ Here are some of the wireframes I made for the mobile screens:
 
 ### Landing page
 
-![Menu for users who are not signed in](images/home.png)
+![Landing page](images/home.png)
 
 ### Footer
 
-![Landing page](images/footer.png)
+![Footer](images/footer.png)
 
 ### Menu
 
-![Sign up form](images/menu.png)
+![Menu](images/menu.png)
 
 ### Products
 
-![User account home page](images/products.png)
+![Products](images/products.png)
 
 ### Form for adjusting quantity of products in shopping bag
 

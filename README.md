@@ -159,9 +159,7 @@ Here are some of the wireframes I made for the mobile screens:
 
 ### W3C HTML Test
 
-The project passed the W3C HTML test.
-
-![W3C HTML Test](images/html.png)
+The html was tested with the W3C HTML test and no major issues were found.
 
 ### W3C CSS Test
 
@@ -179,12 +177,6 @@ Python was tested with the CI Python Linter. No major issues were found.
 
 The website was tested on a variety of browsers. It was also tested in Google 
 Chrome DevTools to see what it looks like in a variety of screen sizes.
-
-### Lighthouse Testing
-
-This is the Lighthouse test result:
-
-![Lighthouse test result](images/lighthouse.png)
 
 ### Manual Testing
 

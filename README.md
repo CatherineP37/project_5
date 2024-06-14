@@ -22,8 +22,8 @@ A filtering feature is not necessary in the app because the company only sells c
 
 The business is a B2C business that regularly engages with customers by holding product tasting events and having an email newsletter.
 
-The business offers free delivery after a customer spends over a certain amount of money on an order. The business will also have a Facebook page and an email newsletter
-that users can sign up to.
+The business offers free delivery after a customer spends over a certain amount of money on an order. The business also has a Facebook page that they can
+use to build up awareness of the business and where they can connect with customers and potential customers.
 
 ### Keywords
 

@@ -28,7 +28,7 @@ SECRET_KEY = 1726725232273
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://8000-catherinep37-project5-woe9rk2m8wf.ws.codeinstitute-ide.net/', 'p-5-bf8a9d578875.herokuapp.com' ]
+ALLOWED_HOSTS = ['8000-catherinep37-project5-woe9rk2m8wf.ws.codeinstitute-ide.net', 'p-5-bf8a9d578875.herokuapp.com' ]
 
 # Application definition
 

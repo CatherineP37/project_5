@@ -8,6 +8,36 @@ Link to the deployed project:
 
 [Deployed website](https://p-5-bf8a9d578875.herokuapp.com/)
 
+## Table of contents
+
+- [Scope](#scope)
+- [Business model](#business-model)
+- [Marketing](#marketing)
+    - [Keywords](#keywords)
+    - [Facebook page](#facebook-page)
+- [Sitemap](#sitemap)
+- [User stories](#user-stories)
+- [Wireframes](#wireframes)
+- [Features](#features)
+    - [Header](#header)
+    - [Landing page](#landing-page)
+    - [Footer](#footer)
+    - [Menu](#menu)
+    - [Products](#products)
+    - [Form for adjusting quantity of products](#form-for-adjusting-quantity-of-products)
+    - [Shopping bag](#shopping-bag)
+- [Bugs](#bugs)
+- [Testing](#testing)
+    - [W3C HTML test](#w3c-html-test)
+    - [W3C CSS test](#w3c-css-test)
+    - [JSHint test](#jshint-test)
+    - [CI Python Linter test](#ci-python-linter-test)
+    - [Browser testing](#browser-testing)
+    - [Manual testing](#manual-testing)    
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
+
 ## Scope
 
 The following must be included in the project:
@@ -20,7 +50,7 @@ The following must be included in the project:
 
 A filtering feature is not necessary in the app because the company only sells chocolate bars and they are all the same price.
 
-## E-commerce business model
+## Business model
 
 The business is a B2C business that regularly engages with customers by holding product tasting events and having an email newsletter.
 
@@ -47,7 +77,7 @@ Here is an image of the Facebook page:
 
 ![Sitemap](images/map.png)
 
-## User Stories
+## User stories
 
 Here is a picture of the GitHub project board for this project:
 
@@ -123,7 +153,7 @@ Here are some of the wireframes I made for the mobile screens:
 
 ![wireframes](images/wireframes.png)
 
-## Database Schema
+## Database schema
 
 ![database schema](images/database.png)
 
@@ -149,9 +179,9 @@ Here are some of the wireframes I made for the mobile screens:
 
 ![Products](images/products.png)
 
-### Form for adjusting quantity of products in shopping bag
+### Form for adjusting quantity of products
 
-![User account home page](images/quantity.png)
+![Form for adjusting quantity of products](images/quantity.png)
 
 ### Shopping bag
 
@@ -185,28 +215,28 @@ These are some of the bugs that occurred during the development of the project:
 
 ## Testing
 
-### W3C HTML Test
+### W3C HTML test
 
 The html was tested with the W3C HTML test and no major issues were found.
 
-### W3C CSS Test
+### W3C CSS test
 
 The project passed the W3C CSS Validation Service.
 
-### JSHint Test 
+### JSHint test 
 
 The JavaScript was tested with JSHint and no major issues were found.
 
-### CI Python Linter Test
+### CI Python Linter test
 
 Python was tested with the CI Python Linter. No major issues were found.
 
-### Browser Testing
+### Browser testing
 
 The website was tested on a variety of browsers. It was also tested in Google 
 Chrome DevTools to see what it looks like in a variety of screen sizes.
 
-### Manual Testing
+### Manual tSesting
 
 LANDING PAGE
 

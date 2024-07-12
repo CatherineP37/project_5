@@ -2,6 +2,8 @@
 
 This is an ecommerce store that sells handmade chocolate bars.
 
+![Mockup image](images/mockup.webp)
+
 Link to the deployed project:
 
 [Deployed website](https://p-5-bf8a9d578875.herokuapp.com/)
@@ -18,12 +20,14 @@ The following must be included in the project:
 
 A filtering feature is not necessary in the app because the company only sells chocolate bars and they are all the same price.
 
-## Marketing
+## E-commerce business model
 
 The business is a B2C business that regularly engages with customers by holding product tasting events and having an email newsletter.
 
 The business offers free delivery after a customer spends over a certain amount of money on an order. The business also has a Facebook page that they can
 use to build up awareness of the business and where they can connect with customers and potential customers.
+
+## Marketing
 
 ### Keywords
 

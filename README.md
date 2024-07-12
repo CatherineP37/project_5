@@ -52,10 +52,12 @@ A filtering feature is not necessary in the app because the company only sells c
 
 ## Business model
 
-The business is a B2C business that regularly engages with customers by holding product tasting events and having an email newsletter.
+The business is a B2C (business to consumer) ecommerce business selling handmade chocolate bars. The target audience are chocolate lovers who want luxury handmade
+chocolate bars.
 
-The business offers free delivery after a customer spends over a certain amount of money on an order. The business also has a Facebook page that they can
-use to build up awareness of the business and where they can connect with customers and potential customers.
+The aims of the ecommerce website are to inform visitors about the range of chocolate bars for sale, to maximise sales and to make it easy for people to make a purchase.
+
+The business regularly engages with customers by holding product tasting events and having an email newsletter. The business offers free delivery after a customer spends over a certain amount of money on an order. The business also has a Facebook page that they can use to build up awareness of the business and where they can connect with customers and potential customers.
 
 ## Marketing
 
@@ -236,7 +238,7 @@ Python was tested with the CI Python Linter. No major issues were found.
 The website was tested on a variety of browsers. It was also tested in Google 
 Chrome DevTools to see what it looks like in a variety of screen sizes.
 
-### Manual tSesting
+### Manual testing
 
 LANDING PAGE
 

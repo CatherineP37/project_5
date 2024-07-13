@@ -52,10 +52,19 @@ A filtering feature is not necessary in the app because the company only sells c
 
 ## Business model
 
-The business is a B2C (business to consumer) ecommerce business selling handmade chocolate bars. The target audience are chocolate lovers who want luxury handmade
-chocolate bars.
+The business is a B2C (business to consumer) ecommerce business selling luxury handmade chocolate bars made from ethically sourced ingredients. 
 
+CORE BUSINESS INTENTS
+
+The business owner wants to make a profit selling luxury handmade chocolate bars made from ethically sourced ingredients. The products are only sold online.
 The aims of the ecommerce website are to inform visitors about the range of chocolate bars for sale, to maximise sales and to make it easy for people to make a purchase.
+
+TARGET AUDIENCE
+
+The target audience are chocolate lovers who want luxury handmade chocolate bars. The target audience also includes people who want to buy some luxury chocolate
+as a gift for someone.
+
+MARKETING STRATEGY
 
 The business regularly engages with customers by holding product tasting events and having an email newsletter. The business offers free delivery after a customer spends over a certain amount of money on an order. The business also has a Facebook page that they can use to build up awareness of the business and where they can connect with customers and potential customers.
 

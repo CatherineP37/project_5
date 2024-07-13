@@ -52,11 +52,11 @@ A filtering feature is not necessary in the app because the company only sells c
 
 ## Business model
 
-The business is a B2C (business to consumer) ecommerce business selling luxury handmade chocolate bars made from ethically sourced ingredients. 
+The business is a B2C (business to consumer) ecommerce business selling luxury handmade chocolate bars made from ethically sourced ingredients. The products are only sold online. Customers choose a bar or bars on the business website. The bars they choose are added to their shopping bag. They can edit the amount of bars in the shopping bag. When they decide to make a purchase they can easily do so on the website with the help of Stripe. Once they have made a purchase they receive a confirmation email. The product is then sent out to them. The aims of the ecommerce website are to inform visitors about the range of chocolate bars for sale, to maximise sales and to make it easy for people to make a purchase.
 
 CORE BUSINESS INTENTS
 
-The business owner wants to make a profit selling luxury handmade chocolate bars made from ethically sourced ingredients. The products are only sold online. Customers choose a bar or bars on the website. The bars they choose are added to their shopping bag. They can edit the amount of bars in the shopping bag. When they decide to make a purchase they can easily do so on the website with the help of Stripe. Once they have made a purchase they receive a confirmation email. The product is then sent out to them. The aims of the ecommerce website are to inform visitors about the range of chocolate bars for sale, to maximise sales and to make it easy for people to make a purchase.
+The business owner wants to make a profit selling luxury handmade chocolate bars made from ethically sourced ingredients. 
 
 TARGET AUDIENCE
 

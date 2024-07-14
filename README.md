@@ -374,15 +374,15 @@ LOCAL DEPLOYMENT
 
 8. Add a .env file in the root director and add the following environment variables:
 
-os.environ.setdefault("STRIPE_PUBLIC_KEY", "xxxxxxxxx")
+   os.environ.setdefault("STRIPE_PUBLIC_KEY", "xxxxxxxxx")
 
-os.environ.setdefault("STRIPE_PRIVATE_KEY", "xxxxxxxxx")
+   os.environ.setdefault("STRIPE_PRIVATE_KEY", "xxxxxxxxx")
 
-os.environ.setdefault("STRIPE_WH_SECRET", "xxxxxxxxx")
+   os.environ.setdefault("STRIPE_WH_SECRET", "xxxxxxxxx")
 
-os.environ.setdefault("SECRET_KEY", "xxxxxxxxxx")
+   os.environ.setdefault("SECRET_KEY", "xxxxxxxxxx")
 
-os.environ.setdefault("DEBUG", "False || True")
+   os.environ.setdefault("DEBUG", "False || True")
 
 9. Type python manage.py makemigrations and then python manage.py migrate in the terminal.
 
@@ -408,17 +408,17 @@ https://signup.heroku.com/
 
 7. Enter these environment variables and add your values:
 
-STRIPE_PUBLIC_KEY
+   STRIPE_PUBLIC_KEY
 
-STRIPE_SECRET_KEY
+   STRIPE_SECRET_KEY
 
-STRIPE_WH_SECRET
+   STRIPE_WH_SECRET
 
-SECRET_KEY
+   SECRET_KEY
 
 8. Select buildpacks from the top menu. Add the following:
 
-heroku/python
+   heroku/python
 
 9. Select the "Deploy" tab.
 

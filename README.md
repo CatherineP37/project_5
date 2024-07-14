@@ -394,7 +394,7 @@ HEROKU DEPLOYMENT
 
 1. Sign up for an account at the Heroku website:
 
-https://signup.heroku.com/
+   https://signup.heroku.com/
 
 2. Select the "New" button and then select "Create new app".
 

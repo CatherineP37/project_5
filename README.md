@@ -356,15 +356,81 @@ Yes.
 
 ## Deployment
 
-This project was deployed using Heroku.
+LOCAL DEPLOYMENT
 
-A Procfile and a requirements.txt was added to the project.
+1. Select the "Clone or download" button in GitHub to clone the repository.
 
-A new app was set up in Heroku and the config vars were added to the app.
+2. Open a new terminal in your IDE.
 
-GitHub was selected as the deployment menthod and the GitHub repository was linked to Heroku.
+3. Set the location of the current working directory to where you want the cloned directory to be made.
 
-"Deploy Branch" was selected to manually deploy the project.
+4. Type git clone, then your URL and then press Enter.
+
+5. Type python -m venv venv in the terminal to create a virtual environment.
+
+6. Type venv\bin\activate in the terminal to activate the virtual environment.
+
+7. Type pip install -r requirements.txt in the terminal to install the requirements.
+
+8. Add a .env file in the root director and add the following environment variables:
+
+os.environ.setdefault("STRIPE_PUBLIC_KEY", "xxxxxxxxx")
+
+os.environ.setdefault("STRIPE_PRIVATE_KEY", "xxxxxxxxx")
+
+os.environ.setdefault("STRIPE_WH_SECRET", "xxxxxxxxx")
+
+os.environ.setdefault("SECRET_KEY", "xxxxxxxxxx")
+
+os.environ.setdefault("DEBUG", "False || True")
+
+9. Type python manage.py makemigrations and then python manage.py migrate in the terminal.
+
+10. Type python manage.py createsuperuser in the terminal.
+
+11. Type python manage.py runserver in the terminal to run the app.
+
+HEROKU DEPLOYMENT
+
+1. Sign up for an account at the Heroku website:
+
+https://signup.heroku.com/
+
+2. Select the "New" button and then select "Create new app".
+
+3. Name your new app and select the region closest to you.
+
+4. Select "Create app".
+
+5. Select "settings".
+
+6. Select the "Reveal Confic Vars" button.
+
+7. Enter these environment variables and add your values:
+
+STRIPE_PUBLIC_KEY
+
+STRIPE_SECRET_KEY
+
+STRIPE_WH_SECRET
+
+SECRET_KEY
+
+8. Select buildpacks from the top menu. Add the following:
+
+heroku/python
+
+9. Select the "Deploy" tab.
+
+10. Select the "Connect to GitHub" button.
+
+11. Find your repository and select the "Connect" button.
+
+12. Select the "Enable Automatic Deploys" button.
+
+13. Select the "Deploy Branch" button.
+
+14. View the app by selecting the "View" button.
 
 ## Credits
 

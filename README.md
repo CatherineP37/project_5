@@ -231,7 +231,9 @@ The html was tested with the W3C HTML test and no major issues were found.
 
 ### W3C CSS test
 
-The project passed the W3C CSS Validation Service.
+The CSS was tested with [CSS W3C Validator](https://jigsaw.w3.org/css-validator/). No issues were found.
+
+![W3C CSS Test](images/css.png)
 
 ### JSHint test 
 

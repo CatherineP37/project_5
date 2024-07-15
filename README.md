@@ -232,7 +232,7 @@ These are some of the bugs that occurred during the development of the project:
 
 ### W3C HTML test
 
-The HTML was tested with [HTML W3C Validator](https://validator.w3.org) and no major errors were found.
+The HTML was tested with [HTML W3C Validator](https://validator.w3.org) and no major issues were found.
 
 ![W3C HTML test](images/home_page_html.png)
 

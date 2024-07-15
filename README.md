@@ -249,6 +249,8 @@ Python was tested with the CI Python Linter. No major issues were found.
 
 ![CI Python Linter test](images/python_test_1.png)
 
+![CI Python Linter test](images/python_test_2.png)
+
 ### Browser testing
 
 The website was tested on a variety of browsers. It was also tested in Google 

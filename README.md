@@ -241,11 +241,13 @@ The CSS was tested with [CSS W3C Validator](https://jigsaw.w3.org/css-validator/
 
 JavaScript was tested with [JSHint](https://jshint.com/) and no major issues were found.
 
-![W3C CSS Test](images/js_test.png)
+![JSHint Test](images/js_test.png)
 
 ### CI Python Linter test
 
 Python was tested with the CI Python Linter. No major issues were found.
+
+![CI Python Linter test](python_test_1.png)
 
 ### Browser testing
 

@@ -28,6 +28,7 @@ Link to the deployed project:
     - [Shopping bag](#shopping-bag)
 - [Bugs](#bugs)
 - [Testing](#testing)
+    - [Google Lighthouse test](#google-lighthouse-test)
     - [W3C HTML test](#w3c-html-test)
     - [W3C CSS test](#w3c-css-test)
     - [JSHint test](#jshint-test)
@@ -225,23 +226,27 @@ These are some of the bugs that occurred during the development of the project:
 
 ## Testing
 
+### Google Lighthouse test
+
+![Google Lighthouse test](images/lighthouse.png)
+
 ### W3C HTML test
 
 The HTML was tested with [HTML W3C Validator](https://validator.w3.org) and no major errors were found.
 
-![W3C HTML Test](images/home_page_html.png)
+![W3C HTML test](images/home_page_html.png)
 
 ### W3C CSS test
 
 The CSS was tested with [CSS W3C Validator](https://jigsaw.w3.org/css-validator/). No issues were found.
 
-![W3C CSS Test](images/css.png)
+![W3C CSS test](images/css.png)
 
 ### JSHint test 
 
 JavaScript was tested with [JSHint](https://jshint.com/) and no major issues were found.
 
-![JSHint Test](images/js_test.png)
+![JSHint test](images/js_test.png)
 
 ### CI Python Linter test
 

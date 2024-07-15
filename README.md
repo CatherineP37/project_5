@@ -244,13 +244,13 @@ The CSS was tested with [CSS W3C Validator](https://jigsaw.w3.org/css-validator/
 
 ### JSHint test 
 
-JavaScript was tested with [JSHint](https://jshint.com/) and no major issues were found.
+The JavaScript was tested with [JSHint](https://jshint.com/) and no major issues were found.
 
 ![JSHint test](images/js_test.png)
 
 ### CI Python Linter test
 
-Python was tested with the CI Python Linter. No major issues were found.
+The Python was tested with the CI Python Linter. No major issues were found.
 
 ![CI Python Linter test](images/python_test_1.png)
 
@@ -268,12 +268,106 @@ LANDING PAGE
 Is the landing page displaying correctly?
 Yes.
 
-Do all the links on the landing page work?
+Does the "Our products" take the user to the products page?
+Yes.
+
+Does the "About us" link take the user to the about page?
+Yes.
+
+Does the "Events" link take the user to the events page?
+Yes.
+
+Does the "Contact us" link take the user to the contact page?
+Yes.
+
+Does the "Sign up" link take the user to the sign up page?
+Yes.
+
+Does the "Sign in" link take the user to the sign in page?
+Yes.
+
+Does the shopping bag link take the user to the shopping bag?
+Yes.
+
+Does the "Check out our chocolate bars" button take the user to the products page?
+Yes.
+
+Does the colour of the "Check out our chocolate bars" button become lighter on hover?
+Yes.
+
+Does the newsletter sign up form work?
+Yes.
+
+Is the newsletter sign up form displaying correctly?
+Yes.
+
+Does the Facebook icon take the user to Facebook?
+Yes.
+
+Does the Instagram icon take the user to Instagram?
+Yes.
+
+Does the "OUR CHOCOLATE BARS" link on the footer take the user to the products page?
+Yes.
+
+Does the "CONTACT US" link on the footer take the user to the contact page?
+Yes.
+
+Does the "ABOUT US" link on the footer take the user to the about page?
+Yes.
+
+Does the "EVENTS" link on the footer take the user to the events page?
+Yes.
+
+Does the "PRIVACY POLICY" on the footer take the user to the privacy policy page?
+Yes.
+
+PRODUCTS PAGE
+
+Is the products page displaying correctly?
+Yes.
+
+Does the search bar at the top of the page accept text input?
+Yes.
+
+Does the search bar at the top of the page return the correct results?
+Yes.
+
+Do each of the links for the individual bars take the user to the product page for that bar?
+Yes.
+
+INDIVIDUAL PRODUCT PAGES
+
+Are these pages displaying correctly?
+Yes.
+
+Does the button for adding products to the shopping bag work?
+Yes.
+
+Does the button for removing products from the shopping bag work?
+Yes.
+
+Does the "Sign in to leave a review" button take the user to the sign in page if they're not signed in already?
+Yes.
+
+If the user is signed in can they see the form for writing a review?
+Yes.
+
+Does the "Post review" button post the review to the model?
+Yes.
+
+Does the review form have validation?
 Yes.
 
 CREATING AN ACCOUNT
 
-Can the user create an account?
+Is there a form that the user can fill in to create an account?
+Yes.
+
+Does the form for creating an account have validation?
+Yes.
+
+Does the button for submitting the create an account form work?
 Yes.
 
 Does the user get a confirmation email when they create an account?
@@ -281,10 +375,28 @@ Yes.
 
 SIGNING IN AND OUT
 
-Can the user sign in and out easily?
+Is there a form for signing in?
 Yes.
 
-Is the CSS working properly?
+Does the sign in form have validation?
+Yes.
+
+Does the submit button for the sign in form work?
+Yes.
+
+Is the sign in form easily accessible?
+Yes.
+
+Is there a form for signing out?
+Yes.
+
+Does the sign out form have validation?
+Yes.
+
+Does the submit button for the sign out form work?
+Yes.
+
+Is the sign out form easily accessible?
 Yes.
 
 SUBSCRIBING TO THE NEWSLETTER
@@ -318,6 +430,8 @@ Yes.
 Can the user pay for their order?
 Yes.
 
+Does the Stripe overlay appear on the screen while the payment is being processed?
+Yes.
 
 REVIEWS
 
@@ -350,8 +464,16 @@ Yes.
 Does the form inform the user about errors in the form?
 Yes.
 
+Does the message get added to the database?
+Yes.
 
 CONTACT
+
+Is the contact form displaying correctly?
+Yes.
+
+Does the form inform the user about errors in the form?
+Yes.
 
 Can the user submit the contact form?
 Yes.
@@ -359,15 +481,13 @@ Yes.
 Does the user get a confirmation message after they send their message?
 Yes.
 
-Does the form inform the user about errors in the form?
+Does the message get added to the database?
 Yes.
-
 
 NAVIGATION
 
-Are the links on the site working properly?
+Are all the links on the site working properly?
 Yes.
-
 
 ## Deployment
 

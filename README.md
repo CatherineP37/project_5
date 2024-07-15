@@ -239,7 +239,9 @@ The CSS was tested with [CSS W3C Validator](https://jigsaw.w3.org/css-validator/
 
 ### JSHint test 
 
-The JavaScript was tested with JSHint and no major issues were found.
+JavaScript was tested with [JSHint](https://jshint.com/) and no major issues were found.
+
+![W3C CSS Test](images/js_test.png)
 
 ### CI Python Linter test
 

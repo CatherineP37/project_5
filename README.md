@@ -247,7 +247,7 @@ JavaScript was tested with [JSHint](https://jshint.com/) and no major issues wer
 
 Python was tested with the CI Python Linter. No major issues were found.
 
-![CI Python Linter test](test_1.png)
+![CI Python Linter test](python_test_1.png)
 
 ### Browser testing
 

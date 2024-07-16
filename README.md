@@ -199,32 +199,6 @@ Here are some of the wireframes I made for the mobile screens:
 
 ![User account home page](images/bag.png)
 
-## Bugs
-
-There are no current bugs in the project.
-
-These are some of the bugs that occurred during the development of the project:
-
-- The font for the logo wasn't showing up. This was solved by adding links in the <head></head> section of the html file.
-
-- The css file had an error in it. This was solved by removing the font import from the base.css.
-
-- The menu button wasn't showing up. This was solved by editing the css.
-
-- The products are not showing up on the products page.
-
-- The login page was not working. This was solved by editing login.html.
-
-- The buttons for adding and subtracting items from shopping bag were not working. This has been solved.
-
-- The padlock sign was not on the buttons. This was solved by editing the css.
-
-- The reviews were not showing up on the product_details page. This was solved by changing the for loop.
-
-- The buttons for deleting and editing reviews where in the wrong place but that has been solved now.
-
-- The contact form and the attendance form were not emptying once the form had been submitted. This has now been solved by editing the views.
-
 ## Testing
 
 ### Google Lighthouse test
@@ -556,6 +530,33 @@ NAVIGATION
 
 Are all the links on the site working properly?
 Yes.
+
+### Bugs
+
+There are no current bugs in the project.
+
+These are some of the bugs that occurred during the development of the project:
+
+- The font for the logo wasn't showing up. This was solved by adding links in the <head></head> section of the html file.
+
+- The css file had an error in it. This was solved by removing the font import from the base.css.
+
+- The menu button wasn't showing up. This was solved by editing the css.
+
+- The products are not showing up on the products page.
+
+- The login page was not working. This was solved by editing login.html.
+
+- The buttons for adding and subtracting items from shopping bag were not working. This has been solved.
+
+- The padlock sign was not on the buttons. This was solved by editing the css.
+
+- The reviews were not showing up on the product_details page. This was solved by changing the for loop.
+
+- The buttons for deleting and editing reviews where in the wrong place but that has been solved now.
+
+- The contact form and the attendance form were not emptying once the form had been submitted. This has now been solved by editing the views.
+
 
 ## Deployment
 

@@ -313,11 +313,11 @@ The CSS was tested with [CSS W3C Validator](https://jigsaw.w3.org/css-validator/
 
 stripe_elements.js was tested with [JSHint](https://jshint.com/) and no major issues were found.
 
-![JSHint test](images/stripe_elements.png)
+![JSHint test](images/js_stripe_elements.png)
 
 countryfield.js was tested with [JSHint](https://jshint.com/) and no major issues were found.
 
-![JSHint test](images/countryfield.png)
+![JSHint test](images/js_countryfield.png)
 
 ### CI Python Linter test
 

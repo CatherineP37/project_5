@@ -523,15 +523,14 @@ LOCAL DEPLOYMENT
 
 8. Add a .env file in the root director and add the following environment variables:
 
-   os.environ.setdefault("STRIPE_PUBLIC_KEY", "xxxxxxxxx")
-
-   os.environ.setdefault("STRIPE_PRIVATE_KEY", "xxxxxxxxx")
-
-   os.environ.setdefault("STRIPE_WH_SECRET", "xxxxxxxxx")
-
-   os.environ.setdefault("SECRET_KEY", "xxxxxxxxxx")
-
-   os.environ.setdefault("DEBUG", "False || True")
+   os.environ["CLOUDINARY_URL"] = 
+   os.environ["DATABASE_URL"] = 
+   os.environ["EMAIL_HOST_PASS"] = 
+   os.environ["EMAIL_HOST_USER"] = 
+   os.environ["SECRET_KEY"] = 
+   os.environ["STRIPE_PUBLIC_KEY"] = 
+   os.environ["STRIPE_SECRET_KEY"] = 
+   os.environ["STRIPE_WH_SECRET"] = 
   
 9. Type python manage.py makemigrations and then python manage.py migrate in the terminal.
 
@@ -557,13 +556,21 @@ HEROKU DEPLOYMENT
 
 7. Enter these environment variables and add your values:
 
+   CLOUDINARY_URL
+
+   DATABASE_URL
+
+   EMAIL_HOST_PASS
+
+   EMAIL_HOST_USER
+
+   SECRET_KEY
+
    STRIPE_PUBLIC_KEY
 
    STRIPE_SECRET_KEY
 
-   STRIPE_WH_SECRET
-
-   SECRET_KEY
+   STRIPE_WH_SECRET  
 
 8. Select buildpacks from the top menu. Add the following:
 

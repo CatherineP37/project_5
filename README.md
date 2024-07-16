@@ -491,6 +491,20 @@ Yes.
 
 ## Deployment
 
+DATABASE
+
+1. Enter your email into the email input box here: https://dbs.ci-dbs.net/
+
+2. Press the "Submit" button.
+
+3. Check your emails. The link to your database will be sent to your email address.
+
+4. Click on the link to access the page about your database.
+
+5. Click on the "Info" button. You will see information about your database such as the database URL and password.
+
+6. Paste the URL into your DATABASE_URL environment variable.
+
 LOCAL DEPLOYMENT
 
 1. Select the "Clone or download" button in GitHub to clone the repository.
@@ -518,7 +532,7 @@ LOCAL DEPLOYMENT
    os.environ.setdefault("SECRET_KEY", "xxxxxxxxxx")
 
    os.environ.setdefault("DEBUG", "False || True")
-
+  
 9. Type python manage.py makemigrations and then python manage.py migrate in the terminal.
 
 10. Type python manage.py createsuperuser in the terminal.

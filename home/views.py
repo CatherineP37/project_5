@@ -21,14 +21,14 @@ def contact(request):
             form = ContactForm()
             messages.success(request, ('Thanks! your message has been sent'))
 
-    context = {'form':form}    
-    
+    context = {'form':form}
+
     return render(request, 'home/contact.html', context)
 
 
 def events(request):
-    
-    events = Event.objects.all() 
+
+    events = Event.objects.all()
     form = AttendanceForm()
 
     if request.method == 'POST':
@@ -42,21 +42,22 @@ def events(request):
                 'events':events,
             }
 
-                       
     return render(request, 'home/events.html', context)
+
 
 def about(request):
     """ A view to return the about page """
 
     return render(request, 'home/about.html')
 
+
 def privacy(request):
     """ A view to return the privacy page """
 
     return render(request, 'home/privacy.html')
 
+
 def account(request):
     """ A view to return the account page """
 
     return render(request, 'home/account.html')
-

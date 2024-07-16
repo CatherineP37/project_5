@@ -13,6 +13,7 @@ from bag.contexts import bag_contents
 import stripe
 import json
 
+
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -45,7 +46,7 @@ def checkout(request):
             'country': request.POST['country'],
             'postcode': request.POST['postcode'],
             'town_or_city': request.POST['town_or_city'],
-            'street_address': request.POST['street_address'],          
+            'street_address': request.POST['street_address'],
             'county': request.POST['county'],
         }
 
@@ -121,7 +122,7 @@ def checkout(request):
                     'country': profile.default_country,
                     'postcode': profile.default_postcode,
                     'town_or_city': profile.default_town_or_city,
-                    'street_address': profile.default_street_address,                    
+                    'street_address': profile.default_street_address,
                     'county': profile.default_county,
                 })
             except UserProfile.DoesNotExist:
@@ -143,6 +144,7 @@ def checkout(request):
 
     return render(request, template, context)
 
+
 def checkout_success(request, order_number):
     """
     Handle successful checkouts
@@ -163,7 +165,7 @@ def checkout_success(request, order_number):
                 'default_country': order.country,
                 'default_postcode': order.postcode,
                 'default_town_or_city': order.town_or_city,
-                'default_street_address': order.street_address,                
+                'default_street_address': order.street_address,
                 'default_county': order.county,
             }
             user_profile_form = UserProfileForm(profile_data, instance=profile)

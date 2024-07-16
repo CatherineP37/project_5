@@ -203,59 +203,97 @@ Here are some of the wireframes I made for the mobile screens:
 
 ### Google Lighthouse test
 
-Home page
-
-![Google Lighthouse test](images/lighthouse.png)
-
 Landing page
+
+![Google Lighthouse test](images/lighthouse_home.png)
 
 Products page
 
+![Google Lighthouse test](images/lighthouse_products.png)
+
 Individual product page
+
+![Google Lighthouse test](images/lighthouse_product.png)
 
 Checkout page
 
+![Google Lighthouse test](images/lighthouse_checkout.png)
+
 Shopping bag
+
+![Google Lighthouse test](images/lighthouse_bag.png)
 
 Sign in 
 
+![Google Lighthouse test](images/lighthouse_sign_in.png)
+
 Sign out
+
+![Google Lighthouse test](images/lighthouse_sign_out.png)
 
 Events page
 
+![Google Lighthouse test](images/lighthouse_events.png)
+
 Privacy policy page
+
+![Google Lighthouse test](images/lighthouse_privacy.png)
 
 About page
 
+![Google Lighthouse test](images/lighthouse_about.png)
+
 Contact page
+
+![Google Lighthouse test](images/lighthouse_contact.png)
 
 ### W3C HTML test
 
-The HTML was tested with [HTML W3C Validator](https://validator.w3.org) and no major issues were found.
-
-![W3C HTML test](images/home_page_html.png)
-
 Landing page
+
+The landing page was tested with [HTML W3C Validator](https://validator.w3.org) and no major issues were found.
+
+![W3C HTML test](images/html_home.png)
 
 Products page
 
+![W3C HTML test](images/html_products.png)
+
 Individual product page
+
+![W3C HTML test](images/html_product.png)
 
 Checkout page
 
+![W3C HTML test](images/html_checkout.png)
+
 Shopping bag
+
+![W3C HTML test](images/html_bag.png)
 
 Sign in 
 
+![W3C HTML test](images/html_sign_in.png)
+
 Sign out
+
+![W3C HTML test](images/html_sign_out.png)
 
 Events page
 
+![W3C HTML test](images/html_events.png)
+
 Privacy policy page
+
+![W3C HTML test](images/html_privacy.png)
 
 About page
 
+![W3C HTML test](images/html_about.png)
+
 Contact page
+
+![W3C HTML test](images/html_contact.png)
 
 ### W3C CSS test
 
@@ -265,32 +303,37 @@ The CSS was tested with [CSS W3C Validator](https://jigsaw.w3.org/css-validator/
 
 ### JSHint test 
 
-The JavaScript was tested with [JSHint](https://jshint.com/) and no major issues were found.
+stripe_elements.js was tested with [JSHint](https://jshint.com/) and no major issues were found.
 
-![JSHint test](images/js_test.png)
+![JSHint test](images/stripe_elements.png)
 
-stripe_elements.js
+countryfield.js was tested with [JSHint](https://jshint.com/) and no major issues were found.
 
-countryfield.js
-
+![JSHint test](images/countryfield.png)
 
 ### CI Python Linter test
 
 The Python was tested with the CI Python Linter. No major issues were found.
 
-![CI Python Linter test](images/python_test_1.png)
-
-![CI Python Linter test](images/python_test_2.png)
-
 bag app
+
+![CI Python Linter test](images/python_bag.png)
 
 checkout app
 
+![CI Python Linter test](images/python_checkout.png)
+
 home app
+
+![CI Python Linter test](images/python_home.png)
 
 products app
 
+![CI Python Linter test](images/python_products.png)
+
 profiles app
+
+![CI Python Linter test](images/python_profiles.png)
 
 ### Browser testing
 

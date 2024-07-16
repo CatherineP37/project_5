@@ -491,6 +491,8 @@ Yes.
 
 ## Deployment
 
+You will need to have an account with Stripe for the deployment.
+
 DATABASE
 
 1. Enter your email into the email input box here: https://dbs.ci-dbs.net/

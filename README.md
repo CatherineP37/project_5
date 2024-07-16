@@ -34,6 +34,7 @@ Link to the deployed project:
     - [JSHint test](#jshint-test)
     - [CI Python Linter test](#ci-python-linter-test)
     - [Browser testing](#browser-testing)
+    - [User story testing](#user-story-testing)
     - [Manual testing](#manual-testing)    
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -260,6 +261,73 @@ The Python was tested with the CI Python Linter. No major issues were found.
 
 The website was tested on a variety of browsers. It was also tested in Google 
 Chrome DevTools to see what it looks like in a variety of screen sizes.
+
+### User story testing
+
+Epic - Navigation
+
+- As a site user I want to view the products so that I can choose a product. THIS TEST PASSED.
+
+- As a site user I want to view product details easily so that I can know enough information to make a choice. THIS TEST PASSED.
+
+- As a site user I want to easily view the total cost of my purchases so that I can avoid spending too much money. THIS TEST PASSED.
+  
+Epic - User accounts
+
+- As a site user I want to easily make an account so that I can more easily make purchases. THIS TEST PASSED.
+
+- As a site user I want to login and logout so that I can access my account. THIS TEST PASSED.
+
+- As a site user I can easily login to my account if I forget my password. THIS TEST PASSED.
+
+- As a site user I can have my own user profile so that I can view my order history and save my payment information. THIS TEST PASSED.
+
+Epic - Shopping bag
+
+- As a site user I can easily change the quantity of a product in my shopping bag. THIS TEST PASSED.
+
+- As a site user I can easily view items in my shopping bag. THIS TEST PASSED.
+
+Epic - Checkout
+
+- As a site user I can easily enter my payment details so that I can make a purchase. THIS TEST PASSED.
+
+- As a site user I can view an order confirmation after making an order. THIS TEST PASSED.
+
+- As a site user I get an email confirmation after making an order. THIS TEST PASSED.
+
+Epic - Store management
+
+- As a store owner I can easily add new items to my store. THIS TEST PASSED.
+
+- As a store owner I can delete products from my store. THIS TEST PASSED.
+
+Epic - Events
+
+- As a site user I can see a list of events. THIS TEST PASSED.
+
+- As a site user I can easily put my name down for events. THIS TEST PASSED.
+
+Epic - Contact
+
+- As a site user I can contact the business easily. THIS TEST PASSED.
+
+- As a store owner I can receive messages from customers. THIS TEST PASSED.
+
+Epic - Products
+
+- As a site user I can easily see what products are for sale. THIS TEST PASSED.
+
+- As a site user I can see a picture of the product so that I know what it looks like. THIS TEST PASSED.
+
+- As a site user I can read a description of a product so that I can learn more about the product before deciding to buy or not. THIS TEST PASSED.
+
+Epic - Reviews
+
+- As a site user I can read reviews about a product so that I can get more information about the product. THIS TEST PASSED.
+
+- As a site user I can write a review about a product. THIS TEST PASSED.
+
 
 ### Manual testing
 

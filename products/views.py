@@ -9,6 +9,7 @@ from .forms import createReview
 
 # Create your views here.
 
+
 def products(request):
     """ A view to show products and search queries """
 
@@ -21,7 +22,7 @@ def products(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria.")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -32,33 +33,35 @@ def products(request):
 
     return render(request, 'products/products.html', context)
 
+
 def product_detail(request, product_id):
     """ A view to show individual product details """
-    
+
     product = get_object_or_404(Product, pk=product_id)
-    reviews = Review.objects.filter(product=product)  
+    reviews = Review.objects.filter(product=product)
     form = createReview()
 
     if request.method == 'POST':
         form = createReview(request.POST)
         reviews = Review.objects.all()
-  
+
         if form.is_valid():
             form.instance.product = product
-            form.instance.author = request.user           
-            
+            form.instance.author = request.user
+
             form.save()
             messages.success(request, ('Thanks for your review!'))
-            return redirect('product_detail', product_id=product_id)  
-    
+            return redirect('product_detail', product_id=product_id)
+
     context = {
         'product': product,
         'reviews': reviews,
-        'form' : form,       
-             
+        'form' : form,
+
     }
 
-    return render(request, 'products/product_detail.html', context)   
+    return render(request, 'products/product_detail.html', context)
+
 
 def update_review(request, review_id):
     """
@@ -67,42 +70,40 @@ def update_review(request, review_id):
     review = get_object_or_404(Review, pk=review_id)
     form = createReview(instance=review)
     product = review.product
-    
 
     if request.method == "POST":
-        form = createReview(request.POST, instance=review)            
+        form = createReview(request.POST, instance=review)
 
         if form.is_valid() and review.author == request.user:
-            review = form.save(commit=False)                      
-            review.author = request.user          
+            review = form.save(commit=False)
+            review.author = request.user
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review updated!')
-            return redirect('product_detail', product_id=product.id) 
+            return redirect('product_detail', product_id=product.id)
         else:
             messages.add_message(request, messages.ERROR, 'Error updating review.')
-            return redirect('update_review',) 
-            
+            return redirect('update_review',)
+
     context = {'form':form}
     return render(request, 'products/update_review.html', context)
-        
+
 
 def delete_review(request, review_id):
     """
     view to delete review
     """
     review = get_object_or_404(Review, pk=review_id)
-    context= {'review':review}
+    context= {'review' : review}
     product = review.product
-   
-    if request.method == "POST":                     
-              
+
+    if request.method == "POST":
+
         if review.author == request.user:
             review.delete()
             messages.add_message(request, messages.SUCCESS, 'Review deleted!')
             return redirect('product_detail', product_id=product.id)
-                       
+
         else:
             messages.add_message(request, messages.ERROR, 'You can only delete your own reviews.')
-           
-    
+
     return render(request, 'products/delete_review.html', context)

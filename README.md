@@ -203,13 +203,59 @@ Here are some of the wireframes I made for the mobile screens:
 
 ### Google Lighthouse test
 
+Home page
+
 ![Google Lighthouse test](images/lighthouse.png)
+
+Landing page
+
+Products page
+
+Individual product page
+
+Checkout page
+
+Shopping bag
+
+Sign in 
+
+Sign out
+
+Events page
+
+Privacy policy page
+
+About page
+
+Contact page
 
 ### W3C HTML test
 
 The HTML was tested with [HTML W3C Validator](https://validator.w3.org) and no major issues were found.
 
 ![W3C HTML test](images/home_page_html.png)
+
+Landing page
+
+Products page
+
+Individual product page
+
+Checkout page
+
+Shopping bag
+
+Sign in 
+
+Sign out
+
+Events page
+
+Privacy policy page
+
+About page
+
+Contact page
 
 ### W3C CSS test
 
@@ -223,6 +269,11 @@ The JavaScript was tested with [JSHint](https://jshint.com/) and no major issues
 
 ![JSHint test](images/js_test.png)
 
+stripe_elements.js
+
+countryfield.js
+
+
 ### CI Python Linter test
 
 The Python was tested with the CI Python Linter. No major issues were found.
@@ -230,6 +281,16 @@ The Python was tested with the CI Python Linter. No major issues were found.
 ![CI Python Linter test](images/python_test_1.png)
 
 ![CI Python Linter test](images/python_test_2.png)
+
+bag app
+
+checkout app
+
+home app
+
+products app
+
+profiles app
 
 ### Browser testing
 

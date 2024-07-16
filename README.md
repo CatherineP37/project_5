@@ -231,6 +231,10 @@ Sign out
 
 ![Google Lighthouse test](images/lighthouse_sign_out.png)
 
+Sign up
+
+![Google Lighthouse test](images/lighthouse_sign_up.png)
+
 Events page
 
 ![Google Lighthouse test](images/lighthouse_events.png)
@@ -278,6 +282,10 @@ Sign in
 Sign out
 
 ![W3C HTML test](images/html_sign_out.png)
+
+Sign up
+
+![W3C HTML test](images/html_sign_up.png)
 
 Events page
 

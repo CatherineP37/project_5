@@ -787,6 +787,6 @@ Codemy.com
 
 Code Institute tutors
 
-My Mentor
+My mentor
 
 

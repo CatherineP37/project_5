@@ -20,6 +20,7 @@ Link to the deployed project:
 - [Sitemap](#sitemap)
 - [Database schema](#database-schema)
 - [Wireframes](#wireframes)
+- [Interactive Figma prototype](#interactive-figma-prototype)
 - [Features](#features)
     - [Header](#header)
     - [Landing page](#landing-page)
@@ -207,6 +208,10 @@ Epic - Reviews
 Here are some of the wireframes I made for the mobile screens:
 
 ![wireframes](images/wireframes.png)
+
+## Interactive Figma prototype
+
+I made an interactive prototype in Figma and carried out usability tests with it. Here is a video of the prototype being tested:
 
 ## Features
 
@@ -452,7 +457,6 @@ Epic - Reviews
 - As a site user I can read reviews about a product so that I can get more information about the product. THIS TEST PASSED.
 
 - As a site user I can write a review about a product. THIS TEST PASSED.
-
 
 ### Manual testing
 

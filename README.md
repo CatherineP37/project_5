@@ -243,6 +243,12 @@ I made an interactive prototype in Figma and carried out usability tests with it
 
 ![User account home page](images/bag.png)
 
+# Build
+
+I built this project with HTML, CSS, JavaScript, Python and Django. 
+
+[Deployed website](https://p-5-bf8a9d578875.herokuapp.com/)
+
 ## Testing
 
 ### Google Lighthouse test

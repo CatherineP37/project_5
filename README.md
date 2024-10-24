@@ -41,7 +41,6 @@ Link to the deployed project:
     - [Bugs](#bugs)   
 - [Deployment](#deployment)
 - [Credits](#credits)
-- [Acknowledgements](#acknowledgements)
 
 ## Scope
 
@@ -832,10 +831,5 @@ Dennis Ivy
 
 Codemy.com
 
-## Acknowledgements
-
-Code Institute tutors
-
-My mentor
 
 

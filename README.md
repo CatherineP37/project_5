@@ -89,6 +89,41 @@ Here is an image of the Facebook page:
 
 ## User research
 
+### Who are the users?
+
+- People who like luxury chocolate
+- People who want to buy a gift for someone
+
+### User research goals
+
+- Understand user goals when using this type of website
+- Understand user pain points when using websites
+- Understand what type of tasks users carry out on these types of websites
+
+### User interviews
+
+For the qualitative research, I interviewed people who had experience with online shopping.
+
+### Surveys
+
+For the quantitative research, I carried out a survey to find out about what users expect from a ecommerce website.
+
+### Key insights from the user research
+
+- Site visitors want to be able to set up an account
+- Site visitors want to sign in and out of their account easily
+- Site visitors want to view the products for sale
+- Site visitors want to read a description of the products for sale
+- Site visitors want to be able to easily see the total cost of the items they've picked
+- Site visitors want to be able to view items in their shopping bag
+- Site visitors want to be able to change the quantity of items in their shopping bag
+- Site visitors want to be able to easily buy items from the store
+- Site visitors want a confirmation email confirming their order
+- Site visitors want to be able to contact the company
+- Site owners want customers to be able to contact them
+- Site owners want to be able to add products to their site
+- Site owners want to be able to delete products from their site
+
 ## User stories
 
 Here is a picture of the GitHub project board for this project:
@@ -97,67 +132,67 @@ Here is a picture of the GitHub project board for this project:
 
 Epic - Navigation
 
-- As a site user I want to view the products so that I can choose a product.
+- As a site user I want to view the products so that I can choose a product
 
-- As a site user I want to view product details easily so that I can know enough information to make a choice.
+- As a site user I want to view product details easily so that I can know enough information to make a choice
 
-- As a site user I want to easily view the total cost of my purchases so that I can avoid spending too much money.
+- As a site user I want to easily view the total cost of my purchases so that I can avoid spending too much money
   
 Epic - User accounts
 
-- As a site user I want to easily make an account so that I can more easily make purchases.
+- As a site user I want to easily make an account so that I can more easily make purchases
 
-- As a site user I want to login and logout so that I can access my account.
+- As a site user I want to login and logout so that I can access my account
 
-- As a site user I can easily login to my account if I forget my password.
+- As a site user I can easily login to my account if I forget my password
 
-- As a site user I can have my own user profile so that I can view my order history and save my payment information.
+- As a site user I can have my own user profile so that I can view my order history and save my payment information
 
 Epic - Shopping bag
 
-- As a site user I can easily change the quantity of a product in my shopping bag.
+- As a site user I can easily change the quantity of a product in my shopping bag
 
-- As a site user I can easily view items in my shopping bag.
+- As a site user I can easily view items in my shopping bag
 
 Epic - Checkout
 
-- As a site user I can easily enter my payment details so that I can make a purchase.
+- As a site user I can easily enter my payment details so that I can make a purchase
 
-- As a site user I can view an order confirmation after making an order.
+- As a site user I can view an order confirmation after making an order
 
-- As a site user I get an email confirmation after making an order.
+- As a site user I get an email confirmation after making an order
 
 Epic - Store management
 
-- As a store owner I can easily add new items to my store.
+- As a store owner I can easily add new items to my store
 
-- As a store owner I can delete products from my store.
+- As a store owner I can delete products from my store
 
 Epic - Events
 
-- As a site user I can see a list of events.
+- As a site user I can see a list of events
 
-- As a site user I can easily put my name down for events.
+- As a site user I can easily put my name down for events
 
 Epic - Contact
 
-- As a site user I can contact the business easily.
+- As a site user I can contact the business easily
 
-- As a store owner I can receive messages from customers.
+- As a store owner I can receive messages from customers
 
 Epic - Products
 
-- As a site user I can easily see what products are for sale.
+- As a site user I can easily see what products are for sale
 
-- As a site user I can see a picture of the product so that I know what it looks like.
+- As a site user I can see a picture of the product so that I know what it looks like
 
-- As a site user I can read a description of a product so that I can learn more about the product before deciding to buy or not.
+- As a site user I can read a description of a product so that I can learn more about the product before deciding to buy or not
 
 Epic - Reviews
 
-- As a site user I can read reviews about a product so that I can get more information about the product.
+- As a site user I can read reviews about a product so that I can get more information about the product
 
-- As a site user I can write a review about a product.
+- As a site user I can write a review about a product
 
 ## Sitemap
 

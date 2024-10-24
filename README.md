@@ -15,8 +15,10 @@ Link to the deployed project:
 - [Marketing](#marketing)
     - [Keywords](#keywords)
     - [Facebook page](#facebook-page)
-- [Sitemap](#sitemap)
+- [User research](#user-research)
 - [User stories](#user-stories)
+- [Sitemap](#sitemap)
+- [Database schema](#database-schema)
 - [Wireframes](#wireframes)
 - [Features](#features)
     - [Header](#header)
@@ -85,9 +87,7 @@ Here is an image of the Facebook page:
 
 ![Sitemap](images/facebook.png)
 
-## Sitemap
-
-![Sitemap](images/map.png)
+## User research
 
 ## User stories
 
@@ -159,15 +159,19 @@ Epic - Reviews
 
 - As a site user I can write a review about a product.
 
+## Sitemap
+
+![Sitemap](images/map.png)
+
+## Database schema
+
+![database schema](images/database.png)
+
 ## Wireframes
 
 Here are some of the wireframes I made for the mobile screens:
 
 ![wireframes](images/wireframes.png)
-
-## Database schema
-
-![database schema](images/database.png)
 
 ## Features
 

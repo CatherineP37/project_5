@@ -4,10 +4,6 @@ This is an ecommerce store that sells handmade chocolate bars.
 
 ![Mockup image](images/mockup.webp)
 
-Link to the deployed project:
-
-[Deployed website](https://p-5-bf8a9d578875.herokuapp.com/)
-
 ## Table of contents
 
 - [Scope](#scope)
@@ -245,6 +241,8 @@ I made an interactive prototype in Figma and carried out usability tests with it
 # Build
 
 I built this project with HTML, CSS, JavaScript, Python and Django. 
+
+This is the link to the deployed project:
 
 [Deployed website](https://p-5-bf8a9d578875.herokuapp.com/)
 

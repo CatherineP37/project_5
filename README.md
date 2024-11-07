@@ -25,6 +25,7 @@ This is an ecommerce store that sells handmade chocolate bars.
     - [Products](#products)
     - [Form for adjusting quantity of products](#form-for-adjusting-quantity-of-products)
     - [Shopping bag](#shopping-bag)
+- [Build](#build)
 - [Testing](#testing)
     - [Google Lighthouse test](#google-lighthouse-test)
     - [W3C HTML test](#w3c-html-test)

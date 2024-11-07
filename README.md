@@ -209,6 +209,8 @@ Here are some of the wireframes I made for the mobile screens:
 
 I made an interactive prototype in Figma and carried out usability tests with it. Here is a video of the prototype being tested:
 
+https://github.com/user-attachments/assets/a33beb59-a467-4973-a6a7-220f815b712a
+
 ## Features
 
 ### Header

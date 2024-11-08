@@ -2,7 +2,7 @@
 
 This is an ecommerce store that sells handmade chocolate bars.
 
-![Mockup image](images/mockup.webp)
+![Mockup image](images/prototype.png)
 
 ## Table of contents
 
